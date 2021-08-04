@@ -8,4 +8,29 @@
 
 $main-soft_color: #686887;
 $primari_color: #FFFFFF;
+$fird_color:#F0145A;
+$bg_color: #F5F5FA;
+$text_color: #B3B3BA;
+$active_color: #0085FF;
 
+%fon {
+    background-color: $primari_color;
+    color: $text_color;
+}
+
+%lang {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primari_color;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 5px 6px 5px;
+    border-radius: 25%;
+    border: none;
+}
+
+%outline {
+    background-color: $fird_color;
+}
