@@ -1,11 +1,15 @@
-
-body {
-    font-family:'TT Norms' , sans-serif;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family:'TT Norms', sans-serif;
+}
 
-@import 'font';
-@import 'header';
-@import 'variables';
+@import 'variables.scss';
+@import 'header.scss' ;
+@import 'font.scss';
+
+
 
 
