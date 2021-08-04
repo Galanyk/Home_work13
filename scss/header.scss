@@ -1,0 +1,27 @@
+.header-container {
+    @extend %cont;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link__lang {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header {
+    background-position: center;
+    background-image: url('../images/Vector.svg');
+    background-repeat: no-repeat; 
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.header-container-lang__link-lang {
+    text-decoration: none;
+    color: $primeri_color;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
