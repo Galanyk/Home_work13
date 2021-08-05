@@ -5,11 +5,17 @@
 }
 
 .header {
-    background-position: center;
+    
+    padding-bottom: 68px;
+}
+
+.icon {
     background-image: url('../images/Pattern.svg');
-    background-repeat: no-repeat; 
     padding-top: 50px;
-    padding-bottom: 50px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    @extend %cont;
+    
 }
 
 .header-container-lang__link-lang-uk {
@@ -65,7 +71,7 @@
 
 .header-container-contact {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
     margin-bottom: 19px;
     padding-top: 6px;
 }
@@ -116,6 +122,76 @@
     color: $active_color;
 }
 
+.fb:hover {
+    fill: $active_color;
+}
 
+.header-container-lang::after   {
+    @extend %point;
+}
+
+.header-container-contacts {
+    display: flex;
+   
+}
+
+.header-container-contacts__link-adres::after {
+    @extend %point; 
+}
+
+.header-container-contacts__link-tel::after {
+    @extend %point;
+}
+
+.header-container-contacts__link-adres:hover {
+    color: $text_color;
+}
+
+.header-container-contacts__link-tel:hover {
+    color: $text_color;
+}
+
+.icon-logo-container__text {
+    font-size: 38px;
+    line-height: 45px;
+    color: $primari_color;
+    font-weight: 500;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.icon-logo {
+    background-image: url('../images/Symbol_Long_leg.svg'), url('../images/Frame_w.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 121px;
+    
+}
+
+
+.icon-buton__btm-svg {
+    border-radius: 50%;
+    border: 1px solid $primari_color;
+    text-decoration: none;
+    display: block;
+    padding: 12px 11px 13px 11px;
+    background-color: $supersoft_color;
+    
+
+}
+
+.icon-buton {
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 100, 0); 
+    
+}
+
+.icon-logo__container {
+   height: 100vh;
+}
 
 

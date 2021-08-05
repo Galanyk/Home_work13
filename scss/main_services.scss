@@ -1,0 +1,15 @@
+.main-services__container {
+    @extend %cont;
+    
+}
+
+.main-services {
+    background-image: url('../images/services/Bg.svg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); 
+}
+
+.main-services-menu__list {
+    display: flex;
+}

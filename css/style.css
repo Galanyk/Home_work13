@@ -7,7 +7,7 @@ body {
   min-width: 320px;
 }
 
-.main-logo__container, .header-container {
+.main-services__container, .icon, .header-container {
   max-width: 1360px;
   margin-left: auto;
   margin-right: auto;
@@ -37,17 +37,31 @@ body {
   background-color: #F0145A;
 }
 
+.header-container-contacts__link-tel::after, .header-container-contacts__link-adres::after, .header-container-lang::after {
+  width: 6px;
+  height: 6px;
+  background-color: #E6E6F0;
+  border-radius: 50px;
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
 }
 
 .header {
-  background-position: center;
+  padding-bottom: 68px;
+}
+
+.icon {
   background-image: url("../images/Pattern.svg");
-  background-repeat: no-repeat;
   padding-top: 50px;
-  padding-bottom: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header-container-lang__link-lang:last-child {
@@ -78,7 +92,6 @@ body {
 
 .header-container-contact {
   display: flex;
-  align-items: baseline;
   margin-bottom: 19px;
   padding-top: 6px;
 }
@@ -129,6 +142,59 @@ body {
   color: #0085FF;
 }
 
+.fb:hover {
+  fill: #0085FF;
+}
+
+.header-container-contacts {
+  display: flex;
+}
+
+.header-container-contacts__link-adres:hover {
+  color: #B3B3BA;
+}
+
+.header-container-contacts__link-tel:hover {
+  color: #B3B3BA;
+}
+
+.icon-logo-container__text {
+  font-size: 38px;
+  line-height: 45px;
+  color: #FFFFFF;
+  font-weight: 500;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.icon-logo {
+  background-image: url("../images/Symbol_Long_leg.svg"), url("../images/Frame_w.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 121px;
+}
+
+.icon-buton__btm-svg {
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding: 12px 11px 13px 11px;
+  background-color: #323264;
+}
+
+.icon-buton {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 100, 0);
+}
+
+.icon-logo__container {
+  height: 100vh;
+}
+
 @font-face {
   font-family: "TT Norms";
   src: url("subset-TTNorms-Bold.eot");
@@ -152,6 +218,16 @@ body {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+.main-services {
+  background-image: url("../images/services/Bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.main-services-menu__list {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
