@@ -7,7 +7,7 @@ body {
   min-width: 320px;
 }
 
-.header-container {
+.main-logo__container, .header-container {
   max-width: 1360px;
   margin-left: auto;
   margin-right: auto;
@@ -109,24 +109,24 @@ body {
   margin-right: 0px;
 }
 
-.btn {
-  background-color: #FFFFFF;
-  padding: 0px;
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  border: none;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
 .header-container-lang {
   margin-right: 10px;
 }
 
+.header-container-contacts__link-f:hover {
+  background: url(../images/Facebook.svg);
+}
+
 .header-container-contacts__link-f {
+  background: url(../images/Facebook_w.svg);
+  width: 24px;
+  height: 24px;
   display: inline-block;
   vertical-align: top;
+}
+
+.header-nav__link:hover {
+  color: #0085FF;
 }
 
 @font-face {

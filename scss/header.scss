@@ -96,24 +96,24 @@
     margin-right: 0px;
 }
 
-.btn {
-    background-color: $primari_color;
-    padding: 0px;
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    border: none;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
 .header-container-lang {
     margin-right: 10px;
 }
 
-.header-container-contacts__link-f {
+.header-container-contacts__link-f:hover {
+    background: url(../images/Facebook.svg);
+}
+
+.header-container-contacts__link-f{
+    background: url(../images/Facebook_w.svg);
+    width: 24px;
+    height: 24px;
     display: inline-block;
     vertical-align: top;
+}
+
+.header-nav__link:hover {
+    color: $active_color;
 }
 
 
