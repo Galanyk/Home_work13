@@ -1,9 +1,9 @@
 %cont{
-    max-width: 1360px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 $main-soft_color: #686887;
@@ -14,6 +14,10 @@ $text_color: #B3B3BA;
 $active_color: #0085FF;
 $separator_color:#E6E6F0;
 $supersoft_color: #323264;
+$gradient-red-text_color:#F0145A, #EF8080;
+$regular_color: #24A3FF;
+
+
 
 
 %fon {
@@ -47,4 +51,57 @@ $supersoft_color: #323264;
     display: inline-block;
     vertical-align: top;  
     margin-left: 10px;
+}
+
+%hero {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+%gradient-color {
+    background: linear-gradient(to right, $gradient-red-text_color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+%title-h3 {
+    font-size: 24px;
+    line-height: 28px;
+    color: $regular_color;
+    font-weight: 500;
+}
+
+%paragraf {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: $primari_color;
+}
+
+%box-shadow {
+    box-shadow:  0px 10px 0px -4px rgba(202, 202, 219, 1), 0px 20px 0px -8px rgba(231, 231, 242, 1); 
+    border-radius: 0px 0px 12px 12px;
+}
+
+%link {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+%title-4 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+%paragraf-mini {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
 }

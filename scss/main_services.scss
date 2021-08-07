@@ -1,15 +1,107 @@
 .main-services__container {
     @extend %cont;
-    
-}
-
-.main-services {
+    @extend %box-shadow;
+    // @extend %box-shadows;
+    padding-bottom: 80px;
+    border-radius: 0px 0px 12px 12px;
     background-image: url('../images/services/Bg.svg');
-    background-position: center;
+    background-position: center ;
     background-repeat: no-repeat; 
-    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); 
+    // box-shadow:  0px 10px 0px -4px rgba(202, 202, 219, 1); 
+    background-size: cover;
+    padding-top: 100px; 
 }
 
 .main-services-menu__list {
-    display: flex;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
 }
+
+.main-services-container__link {
+    opacity: 0.5;
+    color: $primari_color;
+    @extend %link;
+}
+
+.main-services-container.title-hero {
+    @extend %hero;
+    @extend %gradient-color;
+    margin-bottom: 58px;
+}
+
+.main-services-menu__title {
+    @extend %title-h3;
+    margin-bottom: 15px;
+}
+
+.main-services-menu__img {
+    margin-bottom: 20px;
+}
+
+.main-services-menu__text {
+    @extend %paragraf;
+}
+
+.main-services-menu__item {
+    margin-right: 20px;
+    max-width: 413px;
+    margin-bottom: 58px;
+}
+
+.main-services-menu__item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+.main-services-menu__item:nth-child(4n+1) {
+    margin-bottom: 0px;
+}
+
+.container-teams__link {
+    @extend %link;
+    color: $regular_color;
+    margin-bottom: 3px
+}
+
+.main-team-container-teams {
+    padding-top: 40px;
+}
+
+.main-team {
+    @extend %cont;
+    background-color: $primari_color;
+    padding-top: 41px;
+}
+
+.main-team__container {
+    background-color: $bg_color;
+    display: flex;
+    border-radius: 12px;
+}
+
+.container-teams__text.title-hero {
+    @extend %hero;
+    @extend %gradient-color;
+    margin-bottom: 20px;
+}
+
+.main-team-container-img {
+    margin-right: 40px;
+}
+
+.container-teams__title.title-name {
+    @extend %title-4;
+    color: $text_color;
+    margin-bottom: 5px;
+}
+
+.container-teams__text.text-boss {
+    @extend %paragraf-mini;
+    color: $text_color;
+}
+
+@media {
+    
+}
+

@@ -1,3 +1,23 @@
+.icon-bg {
+    background: linear-gradient( 42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    padding-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    @extend %cont; 
+}
+
+.icon-bg-img {
+    background-image: url(../images/Frame_w.svg);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.icon-bg-picture {
+    background-image: url(../images/Symbol_Long_leg.svg);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
 .header-container {
     @extend %cont;
     display: flex;
@@ -5,17 +25,7 @@
 }
 
 .header {
-    
-    padding-bottom: 68px;
-}
-
-.icon {
-    background-image: url('../images/Pattern.svg');
-    padding-top: 50px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    @extend %cont;
-    
+    padding-bottom: 120px;
 }
 
 .header-container-lang__link-lang-uk {
@@ -71,7 +81,6 @@
 
 .header-container-contact {
     display: flex;
-    // align-items: baseline;
     margin-bottom: 19px;
     padding-top: 6px;
 }
@@ -132,7 +141,6 @@
 
 .header-container-contacts {
     display: flex;
-   
 }
 
 .header-container-contacts__link-adres::after {
@@ -160,38 +168,40 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-
-.icon-logo {
-    background-image: url('../images/Symbol_Long_leg.svg'), url('../images/Frame_w.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 121px;
     
 }
 
+.icon-logo {
+    // padding-top: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .icon-buton__btm-svg {
     border-radius: 50%;
     border: 1px solid $primari_color;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     padding: 12px 11px 13px 11px;
     background-color: $supersoft_color;
-    
-
+    height: 42px;
 }
 
 .icon-buton {
     display: flex;
     justify-content: center;
-    box-shadow: rgba(50, 50, 100, 0); 
-    
+    box-shadow: rgba(50, 50, 100, 0);  
+    height: 200px;  
+    margin-bottom: 20px;
+    padding-top: 138px;
 }
 
 .icon-logo__container {
-   height: 100vh;
+    margin-bottom: auto;
 }
+
 
 
