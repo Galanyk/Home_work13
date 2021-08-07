@@ -66,6 +66,9 @@
 
 .main-team-container-teams {
     padding-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-team {
@@ -86,8 +89,8 @@
     margin-bottom: 20px;
 }
 
-.main-team-container-img {
-    margin-right: 40px;
+.main-team-container__img {
+    display: block;
 }
 
 .container-teams__title.title-name {
@@ -101,7 +104,73 @@
     color: $text_color;
 }
 
-@media {
+@media (max-width:1319px) {
+    
+    .main-team {
+        width: 100%;
+    }
+
+    .main-team__container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .main-team-container-teams {
+        padding-top: 10px;
+    }
+
+    .container-teams__name {
+        order: -1;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .container-teams__text.title-hero {
+        margin-bottom: 0px;
+    }
+
+
     
 }
+
+
+@media (max-width:767px) {
+
+    .main-team {
+        width: 100%;
+    }
+
+    .main-team__container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .main-team-container-teams {
+        padding-top: 10px;
+    }
+
+    .container-teams__name {
+        order: -1;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .container-teams__text.title-hero {
+        margin-bottom: 0px;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+       
+    }
+
+  
+   
+}
+
 

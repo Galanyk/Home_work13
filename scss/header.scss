@@ -1,19 +1,12 @@
 .icon-bg {
     background: linear-gradient( 42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
-    padding-top: 50px;
     background-position: center;
     background-repeat: no-repeat; 
     @extend %cont; 
 }
 
 .icon-bg-img {
-    background-image: url(../images/Frame_w.svg);
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-.icon-bg-picture {
-    background-image: url(../images/Symbol_Long_leg.svg);
+    background-image: url(../images/fon.svg);
     background-position: center;
     background-repeat: no-repeat; 
 }
@@ -26,6 +19,7 @@
 
 .header {
     padding-bottom: 120px;
+    padding-top: 50px;
 }
 
 .header-container-lang__link-lang-uk {
@@ -165,18 +159,16 @@
     color: $primari_color;
     font-weight: 500;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    
 }
 
 .icon-logo {
-    // padding-top: 120px;
-    height: 100vh;
+    margin-top: 58px;
+    padding-top: 62px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .icon-buton__btm-svg {
@@ -187,21 +179,69 @@
     vertical-align: top;
     padding: 12px 11px 13px 11px;
     background-color: $supersoft_color;
+    width: 42px;
     height: 42px;
+    margin-bottom: 20px;
+    margin-top: 138px;
 }
 
 .icon-buton {
+    background-size: 100% 200px ;
+    background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 200px;
+    width: 1440px;
     display: flex;
-    justify-content: center;
-    box-shadow: rgba(50, 50, 100, 0);  
-    height: 200px;  
-    margin-bottom: 20px;
-    padding-top: 138px;
+    justify-content: center; 
+}
+
+
+.icon-buton__btm-svg::after {
+    background-size: 100% 200px ;
+    background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 200px;
+    width: 100%;
 }
 
 .icon-logo__container {
     margin-bottom: auto;
 }
+
+@media (max-width:1319px) {
+    .icon-bg {
+        width: 100%;
+    }
+
+    
+
+
+    .icon-buton {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px){
+
+    // .header-container-logo {
+    //     display: none;
+    // }
+
+    .svg-logo-mini {
+        width: 78px;
+        height: 31px;
+    }
+
+}
+
+
+
+
+
+
+
 
 
 
