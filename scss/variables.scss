@@ -63,6 +63,13 @@ $regular_color: #24A3FF;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+} 
+
+%title-h2 {
+    font-size: 32px;
+    line-height: 38px;
+    color: $primari_color;
+    font-weight: 500;
 }
 
 %title-h3 {

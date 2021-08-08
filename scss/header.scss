@@ -3,11 +3,12 @@
     background-position: center;
     background-repeat: no-repeat; 
     @extend %cont; 
+    min-height: 100vh;
 }
 
 .icon-bg-img {
     background-image: url(../images/fon.svg);
-    background-position: center;
+    background-position: 316px 178px;
     background-repeat: no-repeat; 
 }
  .header-container-lang {
@@ -159,12 +160,13 @@
     font-weight: 500;
     max-width: 600px;
     text-align: center;
+    margin-bottom: 152px;
 }
 
 .icon-logo {
     margin-top: 58px;
     padding-top: 62px;
-    min-height: 100vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
