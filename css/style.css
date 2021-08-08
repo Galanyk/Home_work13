@@ -7,7 +7,7 @@ body {
   min-width: 320px;
 }
 
-.main-team, .main-services__container, .header-container, .icon-bg {
+.exper, .main-team, .main-services__container, .icon-bg {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -15,12 +15,12 @@ body {
   padding-right: 60px;
 }
 
-.header-container-lang__link-lang-en:hover, .header-container-lang__link-lang-uk:hover, .header-container-lang__link-lang-ru:hover {
+.header-container-lang__link-lang-uk:hover, .header-container-lang__link.link-lang:hover {
   background-color: #FFFFFF;
   color: #B3B3BA;
 }
 
-.header-container-lang__link-lang-en, .header-container-lang__link-lang-ru, .header-container-lang__link-lang-uk {
+.link-lang, .header-container-lang__link-lang-uk {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -28,7 +28,7 @@ body {
   line-height: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 6px 5px 6px 5px;
+  padding: 5px 6px 5px 6px;
   border-radius: 25%;
   border: none;
 }
@@ -48,13 +48,13 @@ body {
   margin-left: 10px;
 }
 
-.container-teams__text.title-hero, .main-services-container.title-hero {
+.exper-container__link, .container-teams__text.title-hero, .main-services-container.title-hero {
   font-size: 42px;
   line-height: 50px;
   font-weight: 700;
 }
 
-.container-teams__text.title-hero, .main-services-container.title-hero {
+.exper-container__link, .container-teams__text.title-hero, .main-services-container.title-hero {
   background: linear-gradient(to right, #F0145A, #EF8080);
   -webkit-background-clip: text;
   background-clip: text;
@@ -113,6 +113,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.header-container-lang {
+  display: flex;
+}
+
+.btm-nav {
+  display: none;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -121,10 +129,6 @@ body {
 .header {
   padding-bottom: 120px;
   padding-top: 50px;
-}
-
-.header-container-lang__link-lang:last-child {
-  margin-right: 0px;
 }
 
 .header-container-contacts__link-adres {
@@ -153,6 +157,11 @@ body {
   display: flex;
   margin-bottom: 19px;
   padding-top: 6px;
+}
+
+.header-container-logo__link {
+  text-decoration: none;
+  display: block;
 }
 
 .header-nav__list {
@@ -261,7 +270,6 @@ body {
 }
 
 .icon-buton__btm-svg::after {
-  background-size: 100% 200px;
   background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -278,6 +286,31 @@ body {
     width: 100%;
   }
 
+  .header-container-lang::after {
+    display: none;
+  }
+
+  .header-container-logo {
+    order: 1;
+  }
+
+  .header-container {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .header-container-contact {
+    justify-content: space-between;
+  }
+
+  .header {
+    padding-bottom: 50px;
+  }
+
+  .icon-bg-img {
+    background-image: url(../images/logotip.svg);
+  }
+
   .icon-buton {
     width: 100%;
   }
@@ -286,6 +319,54 @@ body {
   .svg-logo-mini {
     width: 78px;
     height: 31px;
+  }
+
+  .icon-bg {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .header-nav__list {
+    display: none;
+  }
+
+  .header-container-contacts__link-adres {
+    display: none;
+    width: 155px;
+  }
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .header-container-contacts__link-f {
+    display: none;
+  }
+
+  .header-container-contacts__link-tel::after {
+    display: none;
+  }
+
+  .btm-nav {
+    text-decoration: none;
+    display: initial;
+    display: block;
+  }
+
+  .header-container-logo {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+  }
+
+  .icon-logo {
+    margin-top: 0px;
+    padding-top: 38px;
+  }
+
+  .icon-logo__container {
+    margin-bottom: 63px;
   }
 }
 @font-face {
@@ -455,6 +536,20 @@ body {
     width: 60px;
     height: 60px;
   }
+}
+.exper {
+  background-image: url("../images/expirien.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.exper-container__link {
+  text-decoration: none;
+}
+
+.exper-container {
+  border-right-width: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

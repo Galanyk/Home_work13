@@ -1,0 +1,18 @@
+.exper {
+    @extend %cont;
+    background-image: url('../images/expirien.svg');
+    background-position: center ;
+    background-repeat: no-repeat; 
+    display: flex;
+}
+
+.exper-container__link {
+    @extend %hero;
+    text-decoration: none;
+    @extend %gradient-color;
+}
+
+.exper-container {
+    border-right-width: 4px;
+
+}

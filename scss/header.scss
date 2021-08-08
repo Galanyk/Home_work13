@@ -10,9 +10,15 @@
     background-position: center;
     background-repeat: no-repeat; 
 }
+ .header-container-lang {
+    display: flex;
+}
+
+.btm-nav {
+    display: none;
+}
 
 .header-container {
-    @extend %cont;
     display: flex;
     justify-content: space-between;
 }
@@ -27,28 +33,16 @@
     @extend %outline;
 }
 
-.header-container-lang__link-lang-ru {
+.link-lang {
     @extend %lang;
 }
 
-.header-container-lang__link-lang-en {
-    @extend %lang;
-}
-
-.header-container-lang__link-lang-ru:hover {
+.header-container-lang__link.link-lang:hover {
     @extend %fon;
 }
 
 .header-container-lang__link-lang-uk:hover {
     @extend %fon;
-}
-
-.header-container-lang__link-lang-en:hover {
-    @extend %fon;
-}
-
-.header-container-lang__link-lang:last-child {
-    margin-right: 0px;
 }
 
 .header-container-contacts__link-adres {
@@ -70,13 +64,18 @@
 }
 
 .header-container-logo {
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
 .header-container-contact {
     display: flex;
     margin-bottom: 19px;
     padding-top: 6px;
+}
+
+.header-container-logo__link {
+    text-decoration: none;
+    display: block;
 }
 
 .header-nav__list {
@@ -198,7 +197,6 @@
 
 
 .icon-buton__btm-svg::after {
-    background-size: 100% 200px ;
     background-image: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -215,9 +213,31 @@
         width: 100%;
     }
 
-    
+    .header-container-lang::after   {
+        display: none;
+    }
 
+    .header-container-logo {
+        order: 1;
+    }
 
+    .header-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .header-container-contact {
+        justify-content: space-between;
+    }
+
+    .header {
+        padding-bottom: 50px;
+    }
+
+    .icon-bg-img  {
+        background-image: url(../images/logotip.svg);
+    }
+  
     .icon-buton {
         width: 100%;
     }
@@ -225,15 +245,65 @@
 
 @media (max-width:767px){
 
-    // .header-container-logo {
-    //     display: none;
-    // }
 
     .svg-logo-mini {
         width: 78px;
         height: 31px;
     }
 
+    .icon-bg {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .header-nav__list {
+        display: none;
+    }
+
+    .header-container-contacts__link-adres {
+        display: none;
+        width: 155px;
+    }
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .header-container-contacts__link-f {
+        display: none;
+    }
+
+    .header-container-contacts__link-tel::after {
+        display: none;
+    }
+
+    .btm-nav {
+        text-decoration: none;
+        display: initial;
+        display: block;
+    }
+
+    .header-container-logo {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0px;
+    }
+
+    .icon-logo {
+        margin-top: 0px;
+        padding-top: 38px;
+    }
+
+    .icon-logo__container {
+        margin-bottom: 63px;
+    }
+
+    
+
+
+
+   
 }
 
 
