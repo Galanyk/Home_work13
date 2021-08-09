@@ -1,22 +1,27 @@
-.container-teams__link {
-    @extend %link;
-    color: $regular_color;
-    margin-bottom: 3px
-}
-
-.main-team-container-teams {
-    padding-top: 40px;
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-team {
-    @extend %cont;
+.main-team.container {
     background-color: $primari_color;
     padding-top: 41px;
     display: flex;
     flex-direction: column;
+}
+
+.main-team__container {
+    background-color: $bg_color;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+.main-team-container-teams {
+    padding-top: 40px;
+    margin-left: 20px;
+    // max-width: 60%;
+}
+
+.container-teams__link {
+    @extend %link;
+    color: $regular_color;
+    margin-bottom: 3px
 }
 
 .main-team-container-link {
@@ -25,20 +30,10 @@
     padding-bottom: 41px;
 }
 
-.main-team__container {
-    background-color: $bg_color;
-    display: flex;
-    border-radius: 12px;
-}
-
 .container-teams__text.title-hero {
     @extend %hero;
     @extend %gradient-color;
     margin-bottom: 20px;
-}
-
-.main-team-container__img {
-    display: block;
 }
 
 .container-teams__title.title-name {
@@ -56,8 +51,12 @@
     display: flex;
 }
 
-.main-team-img-mini {
+.img-foto-mini {
     display: none;
+}
+
+.img-foto {
+    display: block;
 }
 
 @media (max-width:900px) {
@@ -95,32 +94,46 @@
         width: 100%;
     }
 
-    .main-team__container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding-top: 20px;
-    }
-
     .main-team-container-teams {
         padding-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
     }
 
-    .container-teams__name {
-        order: -1;
-        margin-bottom: 20px;
-        text-align: center;
-    }
+   
 
     .container-teams__text.title-hero {
         margin-bottom: 0px;
+       
     }
 
-    .main-team-img {
+    .img-foto {
         display: none;
-    }  
+    } 
+    
+    .img-foto-mini {
+        display: initial;
+        display: block;
+        margin-right: 10px;
+    }
+
+    .container-teams__text.title-hero {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .container-teams__name {
+        display: flex;
+       width: 142px;
+    }
 
     .main-team-img-mini {
-        display: initial;
+        display: flex;
     }
+
+
+    
+    
 }

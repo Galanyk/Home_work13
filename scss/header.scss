@@ -6,8 +6,11 @@
     background: linear-gradient( 42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     background-position: center;
     background-repeat: no-repeat; 
-    @extend %cont; 
     min-height: 100vh;
+}
+
+.container {
+    @extend %cont;
 }
 
 .icon-bg-img {
@@ -215,12 +218,15 @@
 }
 
 @media (max-width:900px) {
-    .icon-bg {
+    .icon-bg.container {
         width: 100%;
+    }
+
+    .container {
         padding-right: 20px;
         padding-left: 20px;
     }
-
+    
     .header-container-lang::after   {
         display: none;
     }

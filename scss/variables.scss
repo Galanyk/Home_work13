@@ -73,6 +73,12 @@ $regular_color: #24A3FF;
     font-weight: 700;
 }
 
+%hero-mini {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
 %gradient-color {
     background: linear-gradient(to right, $gradient-red-text_color);
     -webkit-background-clip: text;
