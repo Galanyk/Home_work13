@@ -15,6 +15,11 @@ body {
   padding-right: 60px;
 }
 
+.main-cases-container__item, .cases-container__link-cases.link-first, .cases-container__title-cases.title-first, .main-cases-container__title-first {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .header-container-lang__link-lang-uk:hover, .header-container-lang__link.link-lang:hover {
   background-color: #FFFFFF;
   color: #B3B3BA;
@@ -77,14 +82,14 @@ body {
   font-weight: 500;
 }
 
-.main-services-menu__title {
+.cases-container__title-cases, .main-services-menu__title {
   font-size: 24px;
   line-height: 28px;
   color: #24A3FF;
   font-weight: 500;
 }
 
-.main-services-menu__text {
+.cases-container__link-cases, .main-services-menu__text {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
@@ -92,13 +97,13 @@ body {
 }
 
 .main-container {
-  box-shadow: 0px 10px 0px -4px #cacadb, 0px 20px 0px -8px #e7e7f2;
+  box-shadow: 0px 30px 0px -20px #e7e7f2, 0px 50px 0px -30px #cacadb;
   border-radius: 0px 0px 12px 12px;
   position: relative;
   z-index: 1;
 }
 
-.container-teams__link, .main-services-container__link {
+.main-cases-container__title-first, .container-teams__link, .main-services-container__link {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
@@ -702,6 +707,13 @@ body {
 .container-teams__link {
   color: #24A3FF;
   margin-bottom: 3px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container-teams-link-foto {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .main-team-container-link {
@@ -744,17 +756,22 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 20px8;
   }
 
   .main-team-container-teams {
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .container-teams__name {
-    order: -1;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  .container-teams-foto {
+    order: -2;
   }
 
   .container-teams__text.title-hero {
@@ -762,20 +779,28 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .main-team {
+  .main-team.container {
     width: 100%;
+    margin-bottom: 15px;
   }
 
   .main-team-container-teams {
     padding-top: 10px;
     margin-left: 0px;
-    width: 100%;
-    flex-wrap: wrap;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 21px;
+    margin-bottom: 20px;
   }
 
   .container-teams__text.title-hero {
     margin-bottom: 0px;
+  }
+
+  .container-teams-foto {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .img-foto {
@@ -784,23 +809,103 @@ body {
 
   .img-foto-mini {
     display: initial;
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     margin-right: 10px;
   }
 
   .container-teams__text.title-hero {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 10px;
   }
 
   .container-teams__name {
-    display: flex;
-    width: 142px;
+    width: 180px;
+    order: 1;
   }
+}
+.main-cases.container {
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+}
 
-  .main-team-img-mini {
-    display: flex;
-  }
+.main-cases-container {
+  background-color: #F5F5FA;
+  border-radius: 12px;
+}
+
+.main-cases-container__title-first {
+  color: #F0145A;
+  padding-bottom: 20px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.cases-container__title-cases {
+  color: #686887;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.cases-container__link-cases {
+  color: #686887;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-cases-container__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-cases-container__item.item-one {
+  width: 33%;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.main-cases-container__item {
+  width: 34%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  padding-top: 105px;
+}
+
+.main-cases-container__item.item-fird {
+  width: 33%;
+  padding-top: 105px;
+}
+
+.main-cases-container__item.item-second {
+  width: 23%;
+  padding-top: 20px;
+}
+
+.main-cases-container__item.item-four {
+  width: 33%;
+  padding-top: 76px;
+}
+
+.main-cases-container__item.item-five {
+  width: 44%;
+  padding-top: 76px;
+}
+
+.main-cases-container__item:nth-child(n+4) {
+  border-bottom: none;
+}
+
+.main-cases-container__item:nth-child(3n+3) {
+  border-right: none;
+}
+
+.main-clients {
+  background-color: #FFFFFF;
+  max-width: 1440px;
 }
 
 /*# sourceMappingURL=style.css.map */

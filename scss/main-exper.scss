@@ -40,8 +40,7 @@
 }
 
 .main-exper-container {
-    margin-right: 40px;
-    
+    margin-right: 40px;   
 }
 
 .exper-container__list {
@@ -49,9 +48,7 @@
 }
 
 .exper-container__item {
-    margin-bottom: 20px;
-   
-    
+    margin-bottom: 20px;   
 }
 
 .exper-container__item:last-child {
@@ -78,7 +75,6 @@
 .main-exper-container-link {
     display: flex;
     display: none;
-    
 }
 
 .main-exper-link.link-dot:last-child {
@@ -89,7 +85,6 @@
     opacity: 1;
     background-color: $regular_color;
 }
-
 
 .exper-container-text {
     padding-top: 50px;
