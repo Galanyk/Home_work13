@@ -15,6 +15,14 @@
     @extend %cont;
     background-color: $primari_color;
     padding-top: 41px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-team-container-link {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 41px;
 }
 
 .main-team__container {
@@ -42,6 +50,10 @@
 .container-teams__text.text-boss {
     @extend %paragraf-mini;
     color: $text_color;
+}
+
+.main-team-container-link {
+    display: flex;
 }
 
 @media (max-width:900px) {

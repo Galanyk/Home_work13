@@ -24,6 +24,7 @@ $gradient-red-text_color:#F0145A, #EF8080;
 $regular_color: #24A3FF;
 
 
+
 %fon {
     background-color: $primari_color;
     color: $text_color;
@@ -55,6 +56,15 @@ $regular_color: #24A3FF;
     display: inline-block;
     vertical-align: top;  
     margin-left: 10px;
+    margin-top: 7px;
+}
+
+%dot {
+    width: 16px;
+	height: 16px;
+	border-radius: 50px;
+    content: '';
+    display: block; 
 }
 
 %hero {

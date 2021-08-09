@@ -6,7 +6,21 @@
 .exper-container__link {
     @extend %hero;
     text-decoration: none;
-    color: $separator_color;
+    color: $text_color;
+    border-right: 4px solid ;
+    border-color: $separator_color;
+}
+
+.main-exper-link.link-btm {
+    width: 6px;
+	height: 6px;
+	background-color: $separator_color;
+	border-radius: 50px;
+    content: '';
+    display: inline-block;
+    vertical-align: top;  
+    margin-left: 10px;
+    margin-top: 7px;
 }
 
 .exper-container__link.link-first {
@@ -27,8 +41,7 @@
 
 .main-exper-container {
     margin-right: 40px;
-    border-right: 4px solid ;
-    border-color: $separator_color;
+    
 }
 
 .exper-container__list {
@@ -37,6 +50,8 @@
 
 .exper-container__item {
     margin-bottom: 20px;
+   
+    
 }
 
 .exper-container__item:last-child {
@@ -45,7 +60,36 @@
 
 .exper-container__link:hover {
     @extend %gradient-color;
+    border-color: linear-gradient(to right, $gradient-red-text_color);
 }
+
+.link-dot {
+    @extend %dot ;
+    margin-right: 14px;
+    opacity: 0.2;
+    background-color: $regular_color;
+}
+
+.main-exper-link.link-dot.first {
+    opacity: 1;
+    background-color: $regular_color;
+}
+
+.main-exper-container-link {
+    display: flex;
+    display: none;
+    
+}
+
+.main-exper-link.link-dot:last-child {
+    margin-right: 0px;
+}
+
+.main-exper-link.link-dot:hover {
+    opacity: 1;
+    background-color: $regular_color;
+}
+
 
 .exper-container-text {
     padding-top: 50px;
@@ -85,10 +129,8 @@
     .exper-container__text {
         font-size: 18px;
         line-height: 26px;
-    }
-
-    .exper-container-text {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .main-exper {
@@ -97,9 +139,16 @@
 
     .exper-container-text {
         padding-top: 0px;
+        margin-bottom: 20px;
     }
 
     .exper-container__title {
         margin-bottom: 15px;
+    }
+
+    .main-exper-container-link {
+        display: initial;
+        display: flex;
+        justify-content: center;
     }
 }
