@@ -729,6 +729,10 @@ body {
   display: flex;
 }
 
+.main-team-img-mini {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .main-team {
     width: 100%;
@@ -781,9 +785,12 @@ body {
     margin-bottom: 0px;
   }
 
-  .img {
-    width: 60px;
-    height: 60px;
+  .main-team-img {
+    display: none;
+  }
+
+  .main-team-img-mini {
+    display: initial;
   }
 }
 
