@@ -1,4 +1,114 @@
-.main-clients {
+.main-clients.container {
     background-color: $primari_color;
-    max-width: 1440px;
+}
+
+.main-clients__link.container__link {
+    color: $supersoft_color;
+    margin-bottom: 30px;
+}
+
+.main-clients__container {
+    text-align: center;
+}
+
+.main-clients-container__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-clients-container__item.logo-1 {
+    background-color: #1C4280;
+    display: flex;
+}
+
+.main-clients-container__item.logo-2 {
+    background-color:#143646;
+}
+
+.main-clients-container__item.logo-3 {
+    background-color:#F48B30;
+}
+
+.main-clients-container__item.logo-4 {
+    background-color: #9E4DC3;
+}
+
+.main-clients-container__item.logo-5 {
+    background-color:#FD9339;
+}
+
+.main-clients-container__item.logo-6 {
+    background-color:#E2E2E4;
+}
+
+.main-clients-container__item.logo-7 {
+    background-color:#C71C36;
+}
+
+.main-clients-container__item.logo-8 {
+    background-color:#DCF3F9;
+}
+
+.main-clients-container__item.logo-9 {
+    background-color:#EAEAEA;
+}
+
+.main-clients-container__item.logo-10 {
+    background-color:#282240;
+}
+
+.main-clients-container__item.logo-11 {
+    background-color:#1D4568;
+}
+
+.main-clients-container__item.logo-12 {
+    background-color:#000000;
+}
+
+.main-clients-container__pic-1 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-2 {
+    padding: 44px 81px 44px 80px;
+}
+
+.main-clients-container__pic-3 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-4 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-5 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-6 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-7 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic8 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-9 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-10 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-11 {
+    padding: 36px 71px 36px 72px;
+}
+
+.main-clients-container__pic-12 {
+    padding: 36px 71px 36px 72px;
 }

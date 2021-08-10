@@ -1,11 +1,11 @@
 .main-public.container {
     background-color: $bg_color;
     padding-top: 40px;
-    @extend %cont;
 }
 
 .main-public-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .main-public-contauner.title-hero {
@@ -14,7 +14,7 @@
 
 .public-container {
     width: 414px;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .main-public-container-list {
@@ -52,3 +52,4 @@
 .public-container__text {
     @extend %paragraf-mini;
 }
+
