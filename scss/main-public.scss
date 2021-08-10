@@ -1,0 +1,46 @@
+.main-public.container {
+    background-color: $bg_color;
+    padding-top: 40px;
+}
+
+.main-public-list {
+    display: flex;
+}
+
+.main-public-contauner.title-hero {
+    margin-bottom: 40px;
+}
+
+.main-public-container-list {
+    background-color: $primari_color;
+}
+
+.public-container {
+    width: 413px;
+    margin-right: 40px;
+}
+
+.public-container:last-child {
+    margin-right: 0px;
+}
+
+.public-container__title {
+    @extend %title-4;
+    color: $regular_color;
+    margin-bottom: 10px;
+    border-bottom: 4px solid $separator_color;
+}
+
+.public-container__text-data {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $text_color;
+    padding-bottom: 20px;
+}
+
+.public-container__text {
+    @extend %paragraf-mini;
+}

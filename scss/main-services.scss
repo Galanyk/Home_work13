@@ -20,7 +20,7 @@
   
 }
 
-.main-services-container__link {
+.container__link.link-services {
     opacity: 0.5;
     color: $primari_color;
     @extend %link;
@@ -28,9 +28,12 @@
 }
 
 .main-services-container.title-hero {
+    margin-bottom: 58px;
+}
+
+.title-hero {
     @extend %hero;
     @extend %gradient-color;
-    margin-bottom: 58px;
 }
 
 .main-services-menu__title {

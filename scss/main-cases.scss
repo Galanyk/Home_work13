@@ -29,7 +29,6 @@
     @extend %title-h3;
     color: $main-soft_color;
     margin-bottom: 20px;
-    width: auto;
 }
 
 .cases-container__link-cases {
@@ -88,6 +87,20 @@
 .main-cases-container__item:nth-child(3n+3) {
     border-right: none;
 }
+
+@media (max-width:900px) {
+    .main-cases.container {
+        width: 100%;
+    }
+
+ 
+
+}
+
+@media (max-width:767px) {
+    
+}
+
 
 
 
