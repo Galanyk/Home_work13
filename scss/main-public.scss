@@ -1,6 +1,7 @@
 .main-public.container {
     background-color: $bg_color;
     padding-top: 40px;
+    @extend %cont;
 }
 
 .main-public-list {
@@ -11,13 +12,20 @@
     margin-bottom: 40px;
 }
 
-.main-public-container-list {
-    background-color: $primari_color;
+.public-container {
+    width: 414px;
+    margin-right: 40px;
 }
 
-.public-container {
-    width: 413px;
-    margin-right: 40px;
+.main-public-container-list {
+    background-color: $primari_color;
+    padding: 20px 20px 20px 21px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.main-public-container-list.list-img {
+    padding: 0px;
 }
 
 .public-container:last-child {

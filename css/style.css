@@ -7,7 +7,7 @@ body {
   min-width: 320px;
 }
 
-.main-container, .container {
+.main-public.container, .main-container, .container {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -925,13 +925,20 @@ body {
   margin-bottom: 40px;
 }
 
-.main-public-container-list {
-  background-color: #FFFFFF;
+.public-container {
+  width: 414px;
+  margin-right: 40px;
 }
 
-.public-container {
-  width: 413px;
-  margin-right: 40px;
+.main-public-container-list {
+  background-color: #FFFFFF;
+  padding: 20px 20px 20px 21px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.main-public-container-list.list-img {
+  padding: 0px;
 }
 
 .public-container:last-child {
