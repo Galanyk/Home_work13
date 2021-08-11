@@ -8,12 +8,14 @@
     border-radius: 12px;
 }
 
-.main-cases-container__title.container__link{
+.main-cases-container__title.title-first {
     color: $accent_color;
     padding-bottom: 20px;
     margin-bottom: 48px;
     border-bottom: 1px solid $primari_color;
     @extend %cont_mini;
+    color: $accent_color;
+    @extend %link;
 }
 
 .cases-container__title-cases.title-first {

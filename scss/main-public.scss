@@ -1,11 +1,13 @@
 .main-public.container {
     background-color: $bg_color;
     padding-top: 40px;
+    position: relative;
 }
 
 .main-public-list {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .main-public-contauner.title-hero {
@@ -46,10 +48,55 @@
     text-transform: uppercase;
     font-weight: 700;
     color: $text_color;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 }
 
 .public-container__text {
     @extend %paragraf-mini;
 }
+
+.main-public-button {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    // // justify-content: center;
+    // align-items: flex-end;
+    background-size: 100%;
+    
+    
+}
+
+.main-public.container::after {
+    background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+    background-repeat: no-repeat;
+    // background-position: bottom center;
+    height: 200px;
+    width: 100%;
+    content: "";
+    display: flex;
+    position: absolute;
+  
+}
+
+.button {
+    background-color: $regular_color;
+    display: inline-block;
+    vertical-align: top;
+    padding: 17px 50px 17px 50px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: $primari_color;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    width: 250px;
+    height: 50px;
+
+    &:hover {
+        background-color: $active_color;
+        box-shadow:  0px 0px 30px rgba(36, 163, 255, 0.5);
+    }
+}
+
 
