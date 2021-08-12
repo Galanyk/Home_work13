@@ -55,7 +55,7 @@
     @extend %fon;
 }
 
-.header-container-contacts__link-adres {
+.header-container.contacts__link-adres {
     text-decoration: none;
     color: $primari_color;
     font-size: 16px;
@@ -147,7 +147,7 @@
     justify-content: flex-end;
 }
 
-.header-container-contacts__link-adres::after {
+.header-container-contacts.link-adres::after {
     @extend %point; 
 }
 
@@ -155,7 +155,7 @@
     @extend %point;
 }
 
-.header-container-contacts__link-adres:hover {
+.header-container-contacts.link-adres:hover {
     color: $text_color;
 }
 
@@ -215,6 +215,8 @@
     background-position: bottom center;
     height: 200px;
     width: 100%;
+    content: "";
+    display: flex;
 }
 
 .icon-logo__container {
