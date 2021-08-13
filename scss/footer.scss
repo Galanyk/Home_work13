@@ -79,3 +79,53 @@
     display: block;  
     margin-right: 10px;
 }
+
+@media (max-width:900px) {
+    .footer__container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container-contact {
+        margin-bottom: 20px;
+    }
+ 
+
+}
+
+@media (max-width:767px){
+    .footer.container {
+        padding-top: 22px;
+        padding-bottom: 116px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .footer-container-link.link-adres {
+        margin-bottom: 10px;
+    }
+
+    .footer-container-contact {
+        flex-direction: column;
+    }
+
+    .footer-container-contact__link.link-f {
+        margin-bottom: 20px;
+    }
+
+    .footer-container-contact__link.link-tel {
+        margin-bottom: 20px;
+    }
+
+    .footer-container-name.text-name {
+        text-align: center;
+    }
+}

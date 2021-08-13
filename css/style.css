@@ -930,6 +930,11 @@ body {
   margin-bottom: 30px;
 }
 
+.main-clients-container__link {
+  text-decoration: none;
+  display: flex;
+}
+
 .main-clients__container {
   text-align: center;
 }
@@ -937,11 +942,9 @@ body {
 .main-clients-container__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.main-clients-container__item {
-  display: flex;
-}
 .main-clients-container__item.logo-1 {
   background-color: #1C4280;
 }
@@ -980,7 +983,7 @@ body {
 }
 
 .main-clients-container.pic-1 {
-  padding: 30px 72px 30px 71px;
+  padding: 36px 72px 36px 71px;
 }
 .main-clients-container.pic-2 {
   padding: 44px 80px 44px 81px;
@@ -1016,6 +1019,57 @@ body {
   padding: 13px 104px 12px 104px;
 }
 
+@media (max-width: 900px) {
+  .main-cases-container {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main-clients-container {
+    width: 187px;
+    height: 90px;
+  }
+  .main-clients-container.pic-1 {
+    padding: 28px 15px 27px 15px;
+  }
+  .main-clients-container.pic-2 {
+    padding: 32px 9px 31px 10px;
+  }
+  .main-clients-container.pic-3 {
+    padding: 25px 13px 25px 14px;
+  }
+  .main-clients-container.pic-4 {
+    padding: 28px 20px 28px 21px;
+  }
+  .main-clients-container.pic-5 {
+    padding: 18px 42px 18px 42px;
+  }
+  .main-clients-container.pic-6 {
+    padding: 21px 38px 20px 38px;
+  }
+  .main-clients-container.pic-7 {
+    padding: 27px 22px 27px 22px;
+  }
+  .main-clients-container.pic-8 {
+    padding: 26px 34px 25px 35px;
+  }
+  .main-clients-container.pic-9 {
+    padding: 10px 38px 10px 38px;
+  }
+  .main-clients-container.pic-10 {
+    padding: 29px 25px 28px 25px;
+  }
+  .main-clients-container.pic-11 {
+    padding: 31px 28px 31px 28px;
+  }
+  .main-clients-container.pic-12 {
+    padding: 29px 29px 28px 30px;
+  }
+
+  .main-clients-container__item.logo-5 {
+    order: 1;
+  }
+}
 .main-public.container {
   background-color: #F5F5FA;
   padding-top: 40px;
@@ -1265,6 +1319,53 @@ body {
   content: "";
   display: block;
   margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  .footer__container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container-contact {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .footer.container {
+    padding-top: 22px;
+    padding-bottom: 116px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .footer-container-link.link-adres {
+    margin-bottom: 10px;
+  }
+
+  .footer-container-contact {
+    flex-direction: column;
+  }
+
+  .footer-container-contact__link.link-f {
+    margin-bottom: 20px;
+  }
+
+  .footer-container-contact__link.link-tel {
+    margin-bottom: 20px;
+  }
+
+  .footer-container-name.text-name {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

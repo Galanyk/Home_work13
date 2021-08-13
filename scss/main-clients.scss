@@ -1,12 +1,17 @@
 .main-clients.container {
     background-color: $primari_color;
-   padding-right: 0px;
-   padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .main-clients__link.container__link {
     color: $supersoft_color;
     margin-bottom: 30px;
+}
+
+.main-clients-container__link {
+    text-decoration: none;
+    display: flex; 
 }
 
 .main-clients__container {
@@ -16,10 +21,10 @@
 .main-clients-container__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-clients-container__item {
-    display: flex; 
 
     &.logo-1 {
         background-color: #1C4280;
@@ -42,7 +47,7 @@
     }
 
     &.logo-6 {
-    background-color:#E2E2E4;
+        background-color:#E2E2E4;
     }
 
     &.logo-7 {
@@ -71,8 +76,9 @@
 }
 
 .main-clients-container {
+    
     &.pic-1 {
-        padding: 30px 72px 30px 71px;
+        padding: 36px 72px 36px 71px;
     }
 
     &.pic-2 {
@@ -117,6 +123,73 @@
 
     &.pic-12 {
         padding: 13px 104px 12px 104px;
+    }
+}
+
+
+@media (max-width:900px) {
+    .main-cases-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:767px){
+    .main-clients-container {
+        width: 187px;
+        height: 90px;
+        
+        &.pic-1 {
+            padding: 28px 15px 27px 15px;
+        }
+    
+        &.pic-2 {
+            padding: 32px 9px 31px 10px;
+        }
+    
+        &.pic-3 {
+            padding: 25px 13px 25px 14px;
+        }
+    
+        &.pic-4 {
+            padding: 28px 20px 28px 21px;
+        }
+    
+        &.pic-5 {
+            padding: 18px 42px 18px 42px;
+        }
+    
+        &.pic-6 {
+            padding: 21px 38px 20px 38px;
+        }
+    
+        &.pic-7 {
+            padding: 27px 22px 27px 22px;
+        }
+    
+        &.pic-8 {
+            padding: 26px 34px 25px 35px;
+        }
+    
+        &.pic-9 {
+            padding: 10px 38px 10px 38px;
+        }
+    
+        &.pic-10 {
+            padding: 29px 25px 28px 25px;
+        }
+    
+        &.pic-11 {
+            padding: 31px 28px 31px 28px;
+        }
+    
+        &.pic-12 {
+            padding: 29px 29px 28px 30px;
+        }
+    }
+
+    .main-clients-container__item.logo-5
+    {
+        order: 1;
     }
 }
 
