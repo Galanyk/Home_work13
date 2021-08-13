@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-weight: 400;
+}
+
 .icon-bg {
     background: linear-gradient( 42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     background-position: center;
@@ -45,6 +49,8 @@
 
 .link-lang {
     @extend %lang;
+    padding: 5px 6px 5px 6px;
+    border-radius: 25%;
 }
 
 .header-container-lang__link.link-lang:hover {
@@ -55,20 +61,17 @@
     @extend %fon;
 }
 
-.header-container.contacts__link-adres {
+.link-adres {
     text-decoration: none;
     color: $primari_color;
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 400;
     margin-right: 10px;
+    @extend %text;
 }
 
-.header-container-contacts__link-tel {
+.link-tel {
     text-decoration: none;
     color: $primari_color;
-    font-size: 16px;
-    line-height: 19px;
+    @extend %text;
     font-weight: 700;
     margin-right: 10px;
 }
@@ -101,9 +104,7 @@
 .header-nav__link {
     text-decoration: none;
     color: $primari_color;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
+    @extend %title-4;
 }
 
 .header-nav__item {
@@ -118,11 +119,11 @@
     margin-right: 10px;
 }
 
-.header-container-contacts__link-f:hover {
+.header-container-contacts.link-f:hover {
     background: url(../images/Facebook.svg);
 }
 
-.header-container-contacts__link-f{
+.header-container-contacts.link-f{
     background: url(../images/Facebook_w.svg);
     width: 24px;
     height: 24px;
@@ -151,7 +152,7 @@
     @extend %point; 
 }
 
-.header-container-contacts__link-tel::after {
+.header-container-contacts.link-tel::after {
     @extend %point;
 }
 
@@ -159,7 +160,7 @@
     color: $text_color;
 }
 
-.header-container-contacts__link-tel:hover {
+.header-container-contacts.link-tel:hover {
     color: $text_color;
 }
 

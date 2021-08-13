@@ -102,6 +102,9 @@
     }
 }
 
+.main-public-cont {
+    border-bottom: 4px solid $separator_color;
+}
 @media (max-width:900px) {
     .main-public.container {
         max-width: 100%;

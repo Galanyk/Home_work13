@@ -33,8 +33,6 @@ body {
   line-height: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 5px 6px 5px 6px;
-  border-radius: 25%;
   border: none;
 }
 
@@ -42,7 +40,7 @@ body {
   background-color: #F0145A;
 }
 
-.header-container-contacts__link-tel::after, .header-container-contacts.link-adres::after, .header-container-lang::after {
+.header-container-contacts.link-tel::after, .header-container-contacts.link-adres::after, .header-container-lang::after {
   width: 6px;
   height: 6px;
   background-color: #E6E6F0;
@@ -92,7 +90,6 @@ body {
 .cases-container__link-cases, .main-services-menu__text {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 400;
   color: #FFFFFF;
 }
 
@@ -112,20 +109,27 @@ body {
   font-weight: 700;
 }
 
-.public-container__title, .container-teams__title.title-name {
+.public-container__title, .container-teams__title.title-name, .header-nav__link {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
 }
 
 .public-container__text, .container-teams__text.text-boss {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+}
+
+.footer-container-name.text-name, .footer-container-contact__link.link-email, .link-tel, .link-adres {
+  font-size: 16px;
+  line-height: 19px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
 }
 
 .icon-bg {
@@ -160,20 +164,20 @@ body {
   padding-top: 50px;
 }
 
-.header-container.contacts__link-adres {
+.link-lang {
+  padding: 5px 6px 5px 6px;
+  border-radius: 25%;
+}
+
+.link-adres {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
   margin-right: 10px;
 }
 
-.header-container-contacts__link-tel {
+.link-tel {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 16px;
-  line-height: 19px;
   font-weight: 700;
   margin-right: 10px;
 }
@@ -206,9 +210,6 @@ body {
 .header-nav__link {
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
 }
 
 .header-nav__item {
@@ -223,11 +224,11 @@ body {
   margin-right: 10px;
 }
 
-.header-container-contacts__link-f:hover {
+.header-container-contacts.link-f:hover {
   background: url(../images/Facebook.svg);
 }
 
-.header-container-contacts__link-f {
+.header-container-contacts.link-f {
   background: url(../images/Facebook_w.svg);
   width: 24px;
   height: 24px;
@@ -252,7 +253,7 @@ body {
   color: #B3B3BA;
 }
 
-.header-container-contacts__link-tel:hover {
+.header-container-contacts.link-tel:hover {
   color: #B3B3BA;
 }
 
@@ -810,6 +811,7 @@ body {
   .container-teams-foto {
     display: flex;
     flex-wrap: wrap;
+    order: 2;
   }
 
   .img-foto {
@@ -1110,6 +1112,10 @@ body {
   box-shadow: 0px 0px 30px rgba(36, 163, 255, 0.5);
 }
 
+.main-public-cont {
+  border-bottom: 4px solid #E6E6F0;
+}
+
 @media (max-width: 900px) {
   .main-public.container {
     max-width: 100%;
@@ -1187,13 +1193,78 @@ body {
 .footer.container {
   padding-top: 32px;
   padding-bottom: 40px;
+  background-color: #F5F5FA;
 }
 
-.footer__container .link-adres {
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400px;
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container {
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container-link.link-adres {
   color: #323264;
+  margin-right: 31px;
+}
+
+.footer-container-link.link-map {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #24A3FF;
+  font-weight: 700;
+}
+.footer-container-link.link-map:hover {
+  color: #F0145A;
+}
+
+.footer-container-contact {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container-contact__link.link-f {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.footer-container-contact__link.link-tel {
+  color: #323264;
+  margin-right: 10px;
+}
+
+.footer-container-contact__link.link-email {
+  color: #24A3FF;
+  text-decoration: none;
+}
+.footer-container-contact__link.link-email:hover {
+  color: #F0145A;
+}
+
+.fb:hover {
+  fill: #F0145A;
+}
+
+.footer-container-name.text-name {
+  color: #B3B3BA;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #B3B3BA;
+  border-radius: 50px;
+  content: "";
+  display: block;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

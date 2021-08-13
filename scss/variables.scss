@@ -39,8 +39,6 @@ $regular_color: #24A3FF;
     line-height: 14px;
     font-weight: 700;
     letter-spacing: 1px;
-    padding: 5px 6px 5px 6px;
-    border-radius: 25%;
     border: none;
 }
 
@@ -104,7 +102,6 @@ $regular_color: #24A3FF;
 %paragraf {
     font-size: 18px;
     line-height: 26px;
-    font-weight: 400;
     color: $primari_color;
 }
 
@@ -127,13 +124,16 @@ $regular_color: #24A3FF;
 %title-4 {
     font-size: 18px;
     line-height: 21px;
-    font-weight: 400;
 }
 
 %paragraf-mini {
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
+}
+
+%text {
+    font-size: 16px;
+    line-height: 19px;
 }
 
 
