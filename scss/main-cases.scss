@@ -1,6 +1,7 @@
 .main-cases.container {
     background-color: $primari_color;
     padding-bottom: 30px;
+    padding-top: 31px;
 }
 
 .main-cases-container {
@@ -91,6 +92,20 @@
 
 .main-cases-container__item:nth-child(3n+3) {
     border-right: none;
+}
+
+.cases-container__title-cases {
+    @extend %paragraf;
+    color: $solid_color;
+   
+}
+
+.main-cases-container__item.item-fird:hover > .main-cases-container__item-one {
+    display: initial;
+}
+.main-cases-container__item-one  {
+    width: 100%;
+    display: none;
 }
 
 @media (max-width:900px) {

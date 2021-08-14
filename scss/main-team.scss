@@ -1,22 +1,22 @@
 .main-teams {
     position: relative;
-    padding-bottom: 40px;
+    padding-top: 61px;
 }
+
 .main-team.container {
     background-color: $primari_color;
-    padding-top: 41px;
     display: flex;
     flex-direction: column;
-    // padding-bottom: 60px;
     
 }
+
 
 .main-team__container {
     background-color: $bg_color;
     display: flex;
     border-radius: 12px;
     justify-content: space-between;
-     margin-bottom: 60px;
+     margin-bottom: 46px;
 }
 
 .swiper-container {
@@ -158,6 +158,11 @@
     .container-teams__name {
        width: 180px;
        order: 1;
+    }
+
+    .container__link {
+     width: 100px;
+        
     }
   
 }

@@ -2,14 +2,18 @@
     padding-bottom: 80px;  
 }
 
-.main-container {
-    @extend %cont;
-    @extend %box-shadow;
+.services-exper {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     background-position: center ;
     background-repeat: no-repeat;  
-    background-size: cover;
+}
+
+.main-container {
+    @extend %cont;
+    box-shadow: 0px 30px 0px -20px rgba(202, 202, 219, 1), 0px 50px 0px -30px rgba(231, 231, 242, 1); 
     border-radius: 0px 0px 12px 12px;
+    position: relative;
+    z-index: 1;
     padding-top: 80px;
 }
 

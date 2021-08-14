@@ -2,14 +2,16 @@
     box-sizing: border-box;
 }
 
+@import 'font.scss';
+
 body {
     font-family:'TT Norms', sans-serif;
     min-width: 320px;
+    font-weight: 400;
 }
 
 @import 'variables.scss';
 @import 'header.scss';
-@import 'font.scss';
 @import 'main-services.scss';
 @import 'main-exper.scss';
 @import 'main-team.scss';
