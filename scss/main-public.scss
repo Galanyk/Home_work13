@@ -77,7 +77,7 @@
     position: absolute;
     content: "";
     left: 0px;
-    bottom: 0px;
+    bottom: 4px;
 }
 
 .button {
@@ -105,10 +105,11 @@
 .main-public-cont {
     border-bottom: 4px solid $separator_color;
 }
+
 @media (max-width:900px) {
     .main-public.container {
         max-width: 100%;
-        padding-bottom: 40px;
+        // padding-bottom: 40px;
     }
 }
 

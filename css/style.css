@@ -695,6 +695,11 @@ body {
     justify-content: center;
   }
 }
+.main-teams {
+  position: relative;
+  padding-bottom: 40px;
+}
+
 .main-team.container {
   background-color: #FFFFFF;
   padding-top: 41px;
@@ -707,6 +712,12 @@ body {
   display: flex;
   border-radius: 12px;
   justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
 .main-team-container-teams {
@@ -885,6 +896,9 @@ body {
   border-right: 1px solid #FFFFFF;
   padding-top: 105px;
 }
+.main-cases-container__item:hover {
+  background-color: #EDEDF7;
+}
 
 .main-cases-container__item.item-fird {
   width: 33%;
@@ -917,6 +931,58 @@ body {
 @media (max-width: 900px) {
   .main-cases.container {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main-cases-container__list {
+    flex-direction: column-reverse;
+  }
+
+  .container__item {
+    border-right: none;
+  }
+
+  .main-cases-container__item {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #FFFFFF;
+    order: 2;
+  }
+
+  .main-cases-container__item.item-one {
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF;
+    order: 7;
+  }
+
+  .main-cases-container__item.item-fird {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #FFFFFF;
+    order: 4;
+  }
+
+  .main-cases-container__item.item-second {
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF;
+    order: 5;
+  }
+
+  .main-cases-container__item.item-four {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #FFFFFF;
+    order: 6;
+  }
+
+  .main-cases-container__item.item-five {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #FFFFFF;
   }
 }
 .main-clients.container {
@@ -1142,7 +1208,7 @@ body {
   position: absolute;
   content: "";
   left: 0px;
-  bottom: 0px;
+  bottom: 4px;
 }
 
 .button {
@@ -1173,7 +1239,6 @@ body {
 @media (max-width: 900px) {
   .main-public.container {
     max-width: 100%;
-    padding-bottom: 40px;
   }
 }
 @media (max-width: 767px) {

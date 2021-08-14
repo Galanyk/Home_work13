@@ -1,8 +1,14 @@
+.main-teams {
+    position: relative;
+    padding-bottom: 40px;
+}
 .main-team.container {
     background-color: $primari_color;
     padding-top: 41px;
     display: flex;
     flex-direction: column;
+    // padding-bottom: 60px;
+    
 }
 
 .main-team__container {
@@ -10,11 +16,18 @@
     display: flex;
     border-radius: 12px;
     justify-content: space-between;
+     margin-bottom: 60px;
 }
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
 
 .main-team-container-teams {
     padding-top: 40px;
     margin-left: 20px;
+   
 }
 
 .container__link {
@@ -62,6 +75,8 @@
 .img-foto {
     display: block;
 }
+
+
 
 @media (max-width:900px) {
   
