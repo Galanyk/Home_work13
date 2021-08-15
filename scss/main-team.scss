@@ -7,9 +7,7 @@
     background-color: $primari_color;
     display: flex;
     flex-direction: column;
-    
 }
-
 
 .main-team__container {
     background-color: $bg_color;
@@ -27,7 +25,6 @@
 .main-team-container-teams {
     padding-top: 40px;
     margin-left: 20px;
-   
 }
 
 .container__link {
@@ -121,11 +118,10 @@
     .main-team-container-teams {
         padding-top: 10px;
         margin-left: 0px;
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         margin-left: 21px;
         margin-bottom: 20px;
+        align-items: flex-start;
     }
 
     .container-teams__text.title-hero {
@@ -159,10 +155,4 @@
        width: 180px;
        order: 1;
     }
-
-    .container__link {
-     width: 100px;
-        
-    }
-  
 }
