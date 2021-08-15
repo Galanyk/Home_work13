@@ -50,13 +50,13 @@
     margin-bottom: 20px;
 }
 
-.container-teams__title.title-name {
+.title-name {
     @extend %title-4;
     color: $text_color;
     margin-bottom: 5px;
 }
 
-.container-teams__text.text-boss {
+.text-boss {
     @extend %paragraf-mini;
     color: $text_color;
 }
@@ -72,7 +72,6 @@
 .img-foto {
     display: block;
 }
-
 
 
 @media (max-width:900px) {

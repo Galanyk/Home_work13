@@ -16,7 +16,7 @@
     position: relative;
 }
 
- .header-container-lang {
+.header-container-lang {
     display: flex;
 }
 
@@ -34,9 +34,14 @@
     padding-top: 50px;
 }
 
-.header-container-lang__link-lang-uk {
+.link-lang-uk {
     @extend %lang;
     @extend %outline;
+    
+    &:hover {
+        @extend %fon;
+    }
+    
 }
 
 .link-lang {
@@ -45,11 +50,7 @@
     border-radius: 25%;
 }
 
-.header-container-lang__link.link-lang:hover {
-    @extend %fon;
-}
-
-.header-container-lang__link-lang-uk:hover {
+.link-lang:hover {
     @extend %fon;
 }
 
@@ -58,6 +59,10 @@
     color: $primari_color;
     margin-right: 10px;
     @extend %text;
+
+    &:hover {
+        color: $text_color;
+    }
 }
 
 .link-tel {
@@ -66,6 +71,10 @@
     @extend %text;
     font-weight: 700;
     margin-right: 10px;
+    
+    &:hover {
+        color: $text_color;
+    }
 }
 
 .header-container-logo {
@@ -84,7 +93,7 @@
     display: block;
 }
 
-.header-nav__list {
+.nav__list {
     display: flex;
 }
 
@@ -94,17 +103,17 @@
     justify-content: flex-end;
 }
 
-.header-nav__link {
+.nav__link {
     text-decoration: none;
     color: $primari_color;
     @extend %title-4;
 }
 
-.header-nav__item {
+.nav__item {
     margin-right: 15px;
 }
 
-.header-nav__item:last-child {
+.nav__item:last-child {
     margin-right: 0px;
 }
 
@@ -112,26 +121,17 @@
     margin-right: 10px;
 }
 
-.header-container-contacts.link-f:hover {
-    background: url(../images/Facebook.svg);
-}
-
-.header-container-contacts.link-f{
-    background: url(../images/Facebook_w.svg);
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.header-nav__link:hover {
+.nav__link:hover {
     color: $active_color;
 }
 
-.fb:hover {
+.fsb:hover {
     fill: $active_color;
 }
 
+.header-dot-lang.dot {
+    background-color: $separator_color;
+}
 .header-dot.dot {
     background-color: $separator_color;
 }
@@ -139,14 +139,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-}
-
-.header-container-contacts.link-adres:hover {
-    color: $text_color;
-}
-
-.header-container-contacts.link-tel:hover {
-    color: $text_color;
 }
 
 .icon-logo-container__text {
@@ -218,11 +210,7 @@
         padding-right: 20px;
         padding-left: 20px;
     }
-    
-    .header-container-lang::after   {
-        display: none;
-    }
-
+   
     .header-container-logo {
         order: 1;
     }
@@ -255,11 +243,11 @@
         height: 31px;
     }
 
-    .header-nav__list {
+    .nav__list {
         display: none;
     }
 
-    .header-container-contacts.link-adres {
+    .link-adres {
         display: none;
     }
 
@@ -268,11 +256,11 @@
         padding-bottom: 100px;
     }
 
-    .header-container-contacts.link-f {
+    .link-f {
         display: none;
     }
 
-    .header-container-contacts.link-tel {
+    .link-tel {
         margin-right: 0px;
         color: $text_color;
     }

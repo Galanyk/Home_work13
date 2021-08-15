@@ -45,12 +45,12 @@ body {
   padding-right: 20px;
 }
 
-.header-container-lang__link-lang-uk:hover, .header-container-lang__link.link-lang:hover {
+.link-lang:hover, .link-lang-uk:hover {
   background-color: #FFFFFF;
   color: #B3B3BA;
 }
 
-.link-lang, .header-container-lang__link-lang-uk {
+.link-lang, .link-lang-uk {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -61,7 +61,7 @@ body {
   border: none;
 }
 
-.header-container-lang__link-lang-uk {
+.link-lang-uk {
   background-color: #F0145A;
 }
 
@@ -107,12 +107,12 @@ body {
   font-weight: 700;
 }
 
-.public-container__title, .container-teams__title.title-name, .header-nav__link {
+.public-container__title, .title-name, .nav__link {
   font-size: 18px;
   line-height: 21px;
 }
 
-.public-container__text, .container-teams__text.text-boss {
+.public-container__text, .text-boss {
   font-size: 16px;
   line-height: 22px;
 }
@@ -164,12 +164,18 @@ body {
   color: #FFFFFF;
   margin-right: 10px;
 }
+.link-adres:hover {
+  color: #B3B3BA;
+}
 
 .link-tel {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: 700;
   margin-right: 10px;
+}
+.link-tel:hover {
+  color: #B3B3BA;
 }
 
 .header-container-logo {
@@ -188,7 +194,7 @@ body {
   display: block;
 }
 
-.header-nav__list {
+.nav__list {
   display: flex;
 }
 
@@ -198,16 +204,16 @@ body {
   justify-content: flex-end;
 }
 
-.header-nav__link {
+.nav__link {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-.header-nav__item {
+.nav__item {
   margin-right: 15px;
 }
 
-.header-nav__item:last-child {
+.nav__item:last-child {
   margin-right: 0px;
 }
 
@@ -215,24 +221,16 @@ body {
   margin-right: 10px;
 }
 
-.header-container-contacts.link-f:hover {
-  background: url(../images/Facebook.svg);
-}
-
-.header-container-contacts.link-f {
-  background: url(../images/Facebook_w.svg);
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.header-nav__link:hover {
+.nav__link:hover {
   color: #0085FF;
 }
 
-.fb:hover {
+.fsb:hover {
   fill: #0085FF;
+}
+
+.header-dot-lang.dot {
+  background-color: #E6E6F0;
 }
 
 .header-dot.dot {
@@ -243,14 +241,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.header-container-contacts.link-adres:hover {
-  color: #B3B3BA;
-}
-
-.header-container-contacts.link-tel:hover {
-  color: #B3B3BA;
 }
 
 .icon-logo-container__text {
@@ -308,10 +298,6 @@ body {
     padding-left: 20px;
   }
 
-  .header-container-lang::after {
-    display: none;
-  }
-
   .header-container-logo {
     order: 1;
   }
@@ -343,11 +329,11 @@ body {
     height: 31px;
   }
 
-  .header-nav__list {
+  .nav__list {
     display: none;
   }
 
-  .header-container-contacts.link-adres {
+  .link-adres {
     display: none;
   }
 
@@ -356,11 +342,11 @@ body {
     padding-bottom: 100px;
   }
 
-  .header-container-contacts.link-f {
+  .link-f {
     display: none;
   }
 
-  .header-container-contacts.link-tel {
+  .link-tel {
     margin-right: 0px;
     color: #B3B3BA;
   }
@@ -778,12 +764,12 @@ body {
   margin-bottom: 20px;
 }
 
-.container-teams__title.title-name {
+.title-name {
   color: #B3B3BA;
   margin-bottom: 5px;
 }
 
-.container-teams__text.text-boss {
+.text-boss {
   color: #B3B3BA;
 }
 
@@ -1039,6 +1025,10 @@ body {
     padding-top: 20px;
     padding-bottom: 21px;
     border-bottom: 1px solid #FFFFFF;
+  }
+
+  .main-cases-container__list:hover .main-cases-container__item.item-ones {
+    order: 20;
   }
 }
 .main-clients.container {
@@ -1487,6 +1477,109 @@ body {
   .footer-container-name.text-name {
     text-align: center;
   }
+}
+.header-team.link-lang {
+  color: #B3B3BA;
+}
+.header-team:hover {
+  background-color: #F5F5FA;
+}
+.header-team.link-lang-uk.link-lang {
+  color: #FFFFFF;
+}
+.header-team.link-adres {
+  color: #B3B3BA;
+}
+.header-team.link-tel {
+  color: #B3B3BA;
+}
+
+.header-team.fsb:hover {
+  background-color: #0085FF;
+}
+
+.header-team.nav__link {
+  color: #24A3FF;
+}
+.header-team.nav__link:hover {
+  color: #F0145A;
+  border-bottom: 2px solid #F0145A;
+}
+
+.header-team.nav__link.link-team {
+  color: #F0145A;
+}
+
+.header-team.nav__item.item-team {
+  border-bottom: 2px solid #F0145A;
+}
+
+.header-container-contact.header-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.logo__link-header-team {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header-container.header-team-container.container {
+    width: 100%;
+  }
+
+  .header-container-contact.header-team {
+    justify-content: space-between;
+  }
+
+  .logo__link-header-team {
+    display: inline;
+  }
+
+  .header-container-logo__link.header-team {
+    display: none;
+  }
+}
+.teams-container.container {
+  padding-bottom: 60px;
+}
+
+.title-teams.title-hero {
+  margin-bottom: 80px;
+  width: 864px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teams-text.title-name {
+  color: #323264;
+}
+
+.teams__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.link-teams {
+  border-radius: 100%;
+  background-color: #F5F5FA;
+  width: 32px;
+  height: 32px;
+  padding: 7px 11px 8px 12px;
+  display: block;
+  text-decoration: none;
+  border: none;
+}
+
+.container-teams-name {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pic-foto {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

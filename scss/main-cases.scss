@@ -130,7 +130,7 @@
 
 .main-cases-container__list.list-dovn:hover + .main-cases-container__item.item-two {
     display: flex;
-   width: 100%;
+    width: 100%;
 
 }
 
@@ -191,6 +191,10 @@
         padding-top: 20px;
         padding-bottom: 21px;
         border-bottom: 1px solid $primari_color;
+    }
+
+    .main-cases-container__list:hover .main-cases-container__item.item-ones {
+        order: 20;
     }
 }
 
