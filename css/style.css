@@ -4,25 +4,25 @@
 
 @font-face {
   font-family: "TT Norms";
-  src: url("subset-TTNorms-Bold.eot");
-  src: url("subset-TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("subset-TTNorms-Bold.woff2") format("woff2"), url("subset-TTNorms-Bold.woff") format("woff"), url("subset-TTNorms-Bold.ttf") format("truetype"), url("subset-TTNorms-Bold.svg#TTNorms-Bold") format("svg");
+  src: url("../fonts/subset-TTNorms-Bold.eot");
+  src: url("../fonts/subset-TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-TTNorms-Bold.woff2") format("woff2"), url("../fonts/subset-TTNorms-Bold.woff") format("woff"), url("../fonts/subset-TTNorms-Bold.ttf") format("truetype"), url("../fonts/subset-TTNorms-Bold.svg#TTNorms-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Norms";
-  src: url("subset-TTNorms-Regular.eot");
-  src: url("subset-TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("subset-TTNorms-Regular.woff2") format("woff2"), url("subset-TTNorms-Regular.woff") format("woff"), url("subset-TTNorms-Regular.ttf") format("truetype"), url("subset-TTNorms-Regular.svg#TTNorms-Regular") format("svg");
-  font-weight: 400;
+  src: url("../fonts/subset-TTNorms-Medium.eot");
+  src: url("../fonts/subset-TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-TTNorms-Medium.woff2") format("woff2"), url("../fonts/subset-TTNorms-Medium.woff") format("woff"), url("../fonts/subset-TTNorms-Medium.ttf") format("truetype"), url("../fonts/subset-TTNorms-Medium.svg#TTNorms-Medium") format("svg");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Norms";
-  src: url("subset-TTNorms-Medium.eot");
-  src: url("subset-TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("subset-TTNorms-Medium.woff2") format("woff2"), url("subset-TTNorms-Medium.woff") format("woff"), url("subset-TTNorms-Medium.ttf") format("truetype"), url("subset-TTNorms-Medium.svg#TTNorms-Medium") format("svg");
-  font-weight: 500;
+  src: url("../fonts/subset-TTNorms-Regular.eot");
+  src: url("../fonts/subset-TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-TTNorms-Regular.woff2") format("woff2"), url("../fonts/subset-TTNorms-Regular.woff") format("woff"), url("../fonts/subset-TTNorms-Regular.ttf") format("truetype"), url("../fonts/subset-TTNorms-Regular.svg#TTNorms-Regular") format("svg");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -74,8 +74,8 @@ body {
 .title-hero {
   background: linear-gradient(to right, #F0145A, #EF8080);
   -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  color: #F0145A;
 }
 
 .exper-container-text__title {
@@ -333,7 +333,7 @@ body {
     display: none;
   }
 
-  .link-adres {
+  .linr-header.link-adres {
     display: none;
   }
 
@@ -466,7 +466,7 @@ body {
 
   .main-services-container.title-hero {
     font-size: 32px;
-    line-height: 38px;
+    line-height: 37px;
     margin-bottom: 20px;
   }
 
@@ -1026,10 +1026,6 @@ body {
     padding-bottom: 21px;
     border-bottom: 1px solid #FFFFFF;
   }
-
-  .main-cases-container__list:hover .main-cases-container__item.item-ones {
-    order: 20;
-  }
 }
 .main-clients.container {
   background-color: #FFFFFF;
@@ -1452,6 +1448,7 @@ body {
   .footer-container {
     flex-direction: column;
     margin-bottom: 20px;
+    align-items: center;
   }
 
   .dot {
@@ -1460,6 +1457,7 @@ body {
 
   .footer-container-link.link-adres {
     margin-bottom: 10px;
+    margin-right: 0px;
   }
 
   .footer-container-contact {
@@ -1468,14 +1466,20 @@ body {
 
   .footer-container-contact__link.link-f {
     margin-bottom: 20px;
+    margin-right: 0px;
   }
 
   .footer-container-contact__link.link-tel {
     margin-bottom: 20px;
+    margin-right: 0px;
   }
 
   .footer-container-name.text-name {
     text-align: center;
+  }
+
+  .footer-cont-name {
+    width: 80%;
   }
 }
 .header-team.link-lang {
@@ -1524,6 +1528,18 @@ body {
   display: none;
 }
 
+.header-container-logo__link.header-team {
+  font-size: 38px;
+  line-height: 45px;
+  color: #323264;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.svg-logo-team {
+  margin-right: 4px;
+}
+
 @media (max-width: 900px) {
   .header-container.header-team-container.container {
     width: 100%;
@@ -1533,11 +1549,28 @@ body {
     justify-content: space-between;
   }
 
-  .logo__link-header-team {
-    display: inline;
+  .svg-logo-team {
+    width: 76px;
+    height: 31px;
+  }
+
+  .svg-logo-slesh {
+    width: 11px;
+    height: 24px;
+  }
+
+  .svg-logo-p {
+    width: 21px;
+    height: 24px;
   }
 
   .header-container-logo__link.header-team {
+    font-size: 19px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .header-team.link-adres {
     display: none;
   }
 }
@@ -1547,7 +1580,7 @@ body {
 
 .title-teams.title-hero {
   margin-bottom: 80px;
-  width: 864px;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1558,7 +1591,7 @@ body {
 
 .teams__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 31%);
   grid-gap: 40px;
 }
 
@@ -1568,18 +1601,92 @@ body {
   width: 32px;
   height: 32px;
   padding: 7px 11px 8px 12px;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   text-decoration: none;
   border: none;
 }
 
+.link-text-logo {
+  font-size: 38px;
+  line-height: 45px;
+  text-decoration: none;
+  color: #323264;
+}
+
 .container-teams-name {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pic-foto {
   display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container-teams-name {
+  display: flex;
+}
+
+.container__link {
+  padding-top: 3px;
+}
+
+@media (max-width: 900px) {
+  .teams-container.container {
+    width: 100%;
+  }
+
+  .teams__list {
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .title-teams.title-hero {
+    width: 100%;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 21px;
+  }
+
+  .teams__link {
+    display: flex;
+  }
+
+  .teams__list {
+    grid-template-columns: 47%;
+    grid-row-gap: 20px;
+    justify-content: start;
+  }
+
+  .container-teams-name {
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .pic-foto {
+    margin-bottom: 0px;
+  }
+
+  .container__link {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .header.header-team {
+    padding-bottom: 20px;
+  }
+
+  .container-teams-names {
+    width: 155px;
+  }
+
+  .teams-container.container {
+    padding-bottom: 41px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

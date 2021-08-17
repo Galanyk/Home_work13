@@ -60,7 +60,6 @@
     }
 }
 
-
 .fb:hover {
     fill: $accent_color;
 }
@@ -90,7 +89,6 @@
     .footer-container-contact {
         margin-bottom: 20px;
     }
- 
 
 }
 
@@ -103,6 +101,7 @@
     .footer-container {
         flex-direction: column;
         margin-bottom: 20px;
+        align-items: center;
     }
 
     .dot {
@@ -111,6 +110,7 @@
 
     .footer-container-link.link-adres {
         margin-bottom: 10px;
+        margin-right: 0px;
     }
 
     .footer-container-contact {
@@ -119,13 +119,19 @@
 
     .footer-container-contact__link.link-f {
         margin-bottom: 20px;
+        margin-right: 0px;
     }
 
     .footer-container-contact__link.link-tel {
         margin-bottom: 20px;
+        margin-right: 0px;
     }
 
     .footer-container-name.text-name {
         text-align: center;
+    }
+
+    .footer-cont-name {
+        width: 80%;
     }
 }

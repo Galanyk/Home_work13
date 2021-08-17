@@ -102,20 +102,9 @@
    
 }
 
-// .main-cases-container__item-one {
-//     display: none;
-// }
-
 .main-cases-container__item.item-two {
     display: none;
 }
-
-
-// .main-cases-container__item.item-wan:hover + .main-cases-container__item-one {
-//     display: flex;
-//    width: 100%;
-
-// }
 
 .main-cases-container__list:hover + .main-cases-container__item.item-ones {
     display: flex;
@@ -193,9 +182,6 @@
         border-bottom: 1px solid $primari_color;
     }
 
-    .main-cases-container__list:hover .main-cases-container__item.item-ones {
-        order: 20;
-    }
 }
 
 
