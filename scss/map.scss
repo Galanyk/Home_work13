@@ -1,0 +1,69 @@
+.header.header-map {
+    padding-bottom: 82px;
+}
+
+.map {
+    width: 100%;
+    display: flex;
+}
+
+.contsiner-icon-help {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: $bg_color;
+    width: 527px;
+}
+
+.container.container-map {
+    display: flex;
+    padding-bottom: 80px;
+    justify-content: space-around;
+}
+
+.cont-contacts {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.link-tel.tel-map {
+    color: $main-alt_color;
+    @extend %link-map;
+    margin-bottom: 20px;
+}
+
+.text-adres.link-map {
+    @extend %link-map;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid $separator_color;
+}
+
+.link-email.link-map {
+    @extend %link-map;
+}
+
+.fb-map {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $regular_color;
+    font-weight: 700;
+    
+}
+
+.link-f-map {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.container__contact {
+    display: flex;
+    flex-direction: column;
+}
+

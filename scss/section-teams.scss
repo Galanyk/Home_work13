@@ -11,6 +11,20 @@
 
 .teams-text.title-name {
     color: $supersoft_color;
+
+    &:hover {
+        color: $accent_color;
+    }
+}
+
+.swiper-pagination-bullet {
+    margin-right: 14px;
+    opacity: 0.2;
+    background-color: #24A3FF;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    content: '';
 }
 
 .teams__list {
@@ -19,16 +33,19 @@
     grid-gap: 40px;
 }
 
-.link-teams {
-    border-radius: 100%;
-    background-color: $bg_color;
+.link-arrow {
     width: 32px;
     height: 32px;
-    padding: 7px 11px 8px 12px;
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
     border: none;
+}
+
+.img-teams-link {
+    padding: 7px 11px 8px 12px;
+    background-color: $bg_color;
+    border-radius: 100%;
 }
 
 .link-text-logo {

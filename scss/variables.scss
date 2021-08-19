@@ -24,9 +24,14 @@ $gradient-red-text_color: $accent_color, #EF8080;
 $regular_color: #24A3FF;
 $grey-bg-alt_color: #EDEDF7;
 $solid_color: #000000;
+$main-regular_color:#323264;
+$main-alt_color: #46466E;
 
 
-
+%link-map {
+    font-size: 21px;
+    line-height: 30px;
+}
 
 %fon {
     background-color: $primari_color;
@@ -130,6 +135,7 @@ $solid_color: #000000;
     font-size: 16px;
     line-height: 19px;
 }
+
 
 
 

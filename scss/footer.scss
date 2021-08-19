@@ -1,4 +1,4 @@
-.footer.container {
+.footer {
     padding-top: 32px;
     padding-bottom: 40px;
     background-color: $bg_color;
@@ -60,6 +60,9 @@
     }
 }
 
+.fb {
+    display: block;
+}
 .fb:hover {
     fill: $accent_color;
 }

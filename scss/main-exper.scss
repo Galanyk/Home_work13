@@ -4,7 +4,6 @@
 }
 
 .main-container {
-    @extend %cont;
     box-shadow: 0px 30px 0px -20px rgba(202, 202, 219, 1), 0px 50px 0px -30px rgba(231, 231, 242, 1); 
     border-radius: 0px 0px 12px 12px;
     position: relative;
@@ -135,7 +134,7 @@
     }
 
     .exper-container__title.title-first {
-        display: initial;
+        display: flex;
         border: none;
     }
 
@@ -156,7 +155,7 @@
     }
 
     .swiper-container.exper-container-wrapper {
-        display: initial;
+        display: flex;
     }
 
     .main-exper-container.none {
@@ -174,7 +173,7 @@
         padding-bottom: 35px;
     }
     .exper-container__title.title-first {
-        display: initial;
+        display: flex;
         font-size: 14px;
         line-height: 17px;
         letter-spacing: 1px;
