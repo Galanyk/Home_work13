@@ -1,3 +1,66 @@
+.lang-team.link-lang{
+    color: $text_color;
+}
+
+.lang-team:hover {
+    background-color: $bg_color;
+}
+
+.lang-team.link-lang-uk.link-lang {
+    color: $primari_color;
+}
+
+.link-adres.link-teams-adres{
+    color: $text_color;
+}
+
+.link-tel.link-teams-tel {
+    color: $text_color;
+}
+
+.path-teams.fsb:hover{
+    background-color: $active_color;
+}
+
+.nav__link.link-header {
+    color: $regular_color;
+
+    &:hover{
+        color: $accent_color;
+        border-bottom: 2px solid $accent_color;
+    }
+}
+
+.nav__link.link-header.link-team {
+    color: $accent_color;
+}
+
+.header-team.nav__item.item-team {
+    border-bottom: 2px solid $accent_color;
+}
+
+.header-container-contact.header-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.logo__link-header-team {
+    display: none;
+}
+
+.header-container-logo__link.header-team {
+    font-size: 38px;
+    line-height: 45px;
+    color: $supersoft_color;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.svg-logo-team {
+    margin-right: 4px;
+}
+
 .teams-container.container {
     padding-bottom: 60px;
 }
@@ -74,67 +137,8 @@
     padding-top: 3px;
 }
 
-@media (max-width:900px) {
-    .teams-container.container {
-        width: 100%;
-    }
-
-    .teams__list {
-        grid-template-columns:repeat(2, 40%);
-        justify-content: center;
-    }
-
-   
-}
-
-@media (max-width:767px) {
-
-    .title-teams.title-hero {
-        width: 100%;
-        font-size: 32px;
-        line-height: 38px;
-        margin-bottom: 21px;
-    }
-  
-    .teams__link {
-        display: flex;
-    }
-
-    .teams__list{
-        grid-template-columns: 47%;
-        grid-row-gap:  20px;
-        justify-content: start;
-    }
-
-    .container-teams-name {
-        margin-left: 20px;
-        flex-direction: column;
-       justify-content: flex-end;
-    }
-
-    .pic-foto {
-        margin-bottom: 0px;
-    }
-    
-    .container__link {
-        padding-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .header.header-team {
-        padding-bottom: 20px;
-    }
-
-    .container-teams-names {
-        width: 155px;
-    }
-
-    .teams-container.container {
-        padding-bottom: 41px;
-    }
-    
 
 
-   
-}
+
+
 
