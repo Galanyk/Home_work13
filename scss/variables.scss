@@ -26,6 +26,7 @@ $grey-bg-alt_color: #EDEDF7;
 $solid_color: #000000;
 $main-regular_color:#323264;
 $main-alt_color: #46466E;
+$border_color: rgba(255, 255, 255, 0.5);
 
 
 %link-map {
@@ -134,6 +135,11 @@ $main-alt_color: #46466E;
 %text {
     font-size: 16px;
     line-height: 19px;
+}
+
+%text-page {
+    font-size: 21px;
+    line-height: 30px;
 }
 
 

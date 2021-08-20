@@ -1,12 +1,123 @@
-.gradientg {
-    background: linear-gradient( 180deg, rgba(50, 50, 100, 0.1) 0%, #323264 100%);
+.gradient {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     background-position: center;
     background-repeat: no-repeat; 
 }
 
-.gradient-icon {
-    background-image: url(../images/fon.svg);
-    background-position: center 178px;
+.gradient-icon.container {
+    background-image: url(../images/service_page/Cover.svg);
+    background-position: top;
     background-repeat: no-repeat; 
-    // position: relative;
+}
+
+.header-container-logo__link.link-logo {
+    color: $primari_color;
+    font-size: 38px;
+    line-height: 45px;
+}
+
+.nav__link.link-chois {
+    padding-bottom: 2px;
+    border-bottom: 2px solid $primari_color;
+}
+
+.container-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 83%;
+}
+
+.title.title-hero {
+    margin-bottom: 20px;
+}
+
+.text-chois {
+    @extend %text-page;
+    color: $primari_color;
+    width: 79%;
+    text-align: center;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.button.button-chois {
+    padding-left: 32px;
+    padding-right: 31px;
+}
+
+.container-icon {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secnion-it {
+    padding-bottom: 80px;
+    border-bottom: 4px solid $border_color;
+}
+
+.title-servises {
+    @extend %title-h3;
+    color: $primari_color;
+    margin-bottom: 20px;
+}
+
+.dot.dot-list {
+    background-color: $accent_color;
+    margin-right: 8px;
+}
+
+.item-services {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 46%;  
+    &:nth-child(4n+4) {
+        margin-bottom: 0px;
+    }
+}
+
+.item__text {
+    @extend %paragraf;
+}
+
+.list-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-services {
+    box-shadow: 0px 30px 0px -20px rgba(202, 202, 219, 1), 0px 50px 0px -30px rgba(231, 231, 242, 1); 
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 80px;
+}
+
+.main-services {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.popup.popup-services {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    border: none;
+    background-color: $bg_color;
+}
+
+.popup.open {
+    display: flex;
 }

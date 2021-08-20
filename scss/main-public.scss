@@ -96,14 +96,17 @@
     color: $primari_color;
     box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
     text-decoration:none;
-    margin-bottom: 40px;
-    margin-top: 110px;
 
     &:hover {
         background-color: $active_color;
         box-shadow:  0px 0px 30px rgba(36, 163, 255, 0.5);
     }
 }
+
+.button.botton-public {
+    margin-bottom: 40px;
+    margin-top: 110px;
+} 
 
 .main-public-cont {
     border-bottom: 4px solid $separator_color;
