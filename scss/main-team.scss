@@ -3,10 +3,11 @@
     padding-top: 61px;
 }
 
-.main-team.container {
+.main-team {
     background-color: $primari_color;
     display: flex;
     flex-direction: column;
+    padding-bottom: 36px;
 }
 
 .main-team__container {
@@ -14,7 +15,6 @@
     display: flex;
     border-radius: 12px;
     justify-content: space-between;
-     margin-bottom: 46px;
 }
 
 .swiper-container {
@@ -38,6 +38,10 @@
 .container-teams-link-foto {
     display: inline-block;
     vertical-align: top;
+}
+
+.teams-cont.container {
+    padding-bottom: 41px;
 }
 
 .main-team-container-link {
@@ -94,6 +98,10 @@
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child{
     margin-right: 0px;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    bottom: 0px;
 }
 
 

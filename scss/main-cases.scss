@@ -1,7 +1,6 @@
 .main-cases{
     background-color: $primari_color;
     padding-bottom: 30px;
-    padding-top: 31px;
 }
 
 .main-cases-container {
@@ -19,7 +18,7 @@
     @extend %link;
 }
 
-.cases-container__title-cases.title-first {
+.cases-container__title-cases.title-hillel {
     @extend %cont_mini;
 }
 
@@ -36,62 +35,63 @@
 .text-cases-logo {
     @extend %paragraf;
     color: $main-soft_color;
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: top;
 }
 
-.list-cases {
+.container-cases {
     display: flex;
     flex-wrap: wrap;
 }
 
-.item-cases.item-one {
+.bloc.bloc-hillel {
     width: 33%;
     padding-top: 20px;
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.item-cases {
+.bloc {
     width: 34%;
     @extend %cont_mini;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     border-bottom: 1px solid $primari_color;
     border-right: 1px solid $primari_color;
-    padding-top: 105px;
 
     &:hover {
         background-color: $grey-bg-alt_color;
     }
 }
 
-.item-cases.item-fird {
+.bloc.bloc-wan {
+    padding-top: 105px;
+}
+
+.bloc.item-fird {
     width: 33%;
     padding-top: 105px;
     border-bottom: 1px solid $primari_color;
     border-right: 1px solid $primari_color;
 }
 
-.item-cases.item-second {
+.bloc.bloc-3d {
     width: 25%;
     padding-top: 20px;
 }
 
-.item-cases.item-four {
+.bloc.bloc-adtel {
     width: 32%;
     padding-top: 76px;
 }
 
-.item-cases.item-five {
+.bloc.item-five {
     width: 43%;
+    padding-top: 76px;
 }
 
-.item-cases:nth-child(n+5) {
+.bloc:nth-child(n+5) {
     border-bottom: none;
 }
 
-.item-cases:nth-child(4n+3) {
+.bloc:nth-child(4n+3) {
     border-right: none;
 }
 
@@ -121,7 +121,7 @@
         border-bottom: none;
     }
 }
-.open.container-item-cases {
+.container-item-cases.open {
     display: flex;
     order: 4;
 }

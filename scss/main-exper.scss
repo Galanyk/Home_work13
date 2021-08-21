@@ -20,7 +20,7 @@
    
 
     &.title-first{
-        background: linear-gradient(#EF8080 0%,#F0145A 100%);
+        background: linear-gradient(to right,#EF8080 0%,#F0145A 100%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -73,13 +73,13 @@
 }
 
 .exper-container__title:hover {
-    background: linear-gradient(#EF8080 0%,$accent_color 100%);
+    background: linear-gradient(to right,#EF8080 0%,#F0145A 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-color: $accent_color;
     opacity: 0.6;
-    border-color: linear-gradient(#EF8080 0%,$accent_color 100%);
+    border-color: linear-gradient(to right,#EF8080 0%,#F0145A 100%);
 }
 
 .exper-container__item:hover .exper-container__title {

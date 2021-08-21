@@ -9,7 +9,7 @@
     <title>Team</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header header-tems">
         <div class="header-container header-team-container container">
             <div class="header-container-logo">
                 <a class="header-container-logo__link header-team" href="#">
@@ -54,13 +54,48 @@
                     </svg>
                 </a>      
                    
-                <a class="btm-nav header-team" href="#">
+                <button class="btm-nav header-team">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 10H25" stroke="#323264" stroke-width="2"/>
-                    <path d="M7 16H25" stroke="#323264" stroke-width="2"/>
-                    <path d="M7 22H25" stroke="#323264" stroke-width="2"/>
+                        <path d="M7 10H25" stroke="#323264" stroke-width="2"/>
+                        <path d="M7 16H25" stroke="#323264" stroke-width="2"/>
+                        <path d="M7 22H25" stroke="#323264" stroke-width="2"/>
                     </svg>
-                </a>
+                </button>
+
+                <!-- Open -->
+                <div class="popup-burger">
+                    <div class="burger-container container">
+                        <button class="close burger-close">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                            </svg>   
+                        </button>
+                        <nav class="burger__nav">
+                            <ul class="burger__list">
+                                <li class="header-team nav__item burger-item">
+                                    <a href="#" class="nav__link link-header burger-link">про нас</a>
+                                </li>
+
+                                <li class="header-team nav__item burger-item">
+                                    <a href="#" class="nav__link link-header burger-link">послуги</a>
+                                </li>
+
+                                <li class="header-team nav__item burger-item">
+                                    <a href="#" class="nav__link link-header burger-link">команда</a>
+                                </li>
+
+                                <li class="header-team nav__item burger-item">
+                                    <a href="#" class="nav__link link-header link-burger">публікації</a>
+                                </li>
+
+                                <li class="header-team nav__item burger-item">
+                                    <a href="#" class="nav__link link-header burger-link">контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
 
             <div class="containers">
@@ -130,7 +165,7 @@
                                     <p class="teams-text title-name">Олександр Олександровський</p>
                                     <p class="teams-text-boss text-boss">Керуючий партнер</p>
                                 </div>
-                                <div class="container__link">
+                                <div class="container__link-teams">
                                     <a class="link-arrow" href="#">
                                         <img class="img-teams-link" src="images/teams/Vector2.svg" alt="">   
                                     </a>
@@ -145,7 +180,7 @@
                                     <p class="teams-text title-name">Олег Кобзар</p>
                                     <p class="teams-text-boss text-boss">Equity partner, Attorney-at-law</p>
                                 </div>
-                                <div class="container__link">
+                                <div class="container__link-teams">
                                     <a class="link-arrow" href="#">
                                         <img class="img-teams-link" src="images/teams/Vector2.svg" alt="">   
                                     </a>
@@ -160,7 +195,7 @@
                                     <p class="teams-text title-name">Владислав Мельник</p>
                                     <p class="teams-text-boss text-boss">Associate</p>
                                 </div>
-                                <div class="container__link">
+                                <div class="container__link-teams">
                                     <a class="link-arrow" href="#">
                                         <img class="img-teams-link" src="images/teams/Vector2.svg" alt="">   
                                     </a>
@@ -168,14 +203,14 @@
                             </div>
                         </li>
 
-                        <li class="teams__link">
+                        <li class="teams__link link-for">
                             <img class="pic-foto" src="images/teams/Photo3.svg" alt="">
                             <div class="container-teams-name">
                                 <div class="container-teams-names">
                                     <p class="teams-text title-name">Владислав Мельник</p>
                                     <p class="teams-text-boss text-boss">Associate</p>
                                 </div>
-                                <div class="container__link">
+                                <div class="container__link-teams">
                                     <a class="link-arrow" href="#">
                                         <img class="img-teams-link" src="images/teams/Vector2.svg" alt="">      
                                     </a>
@@ -183,14 +218,14 @@
                             </div>
                         </li>
 
-                        <li class="teams__link">
+                        <li class="teams__link teams__link link-fre">
                             <img class="pic-foto" src="images/teams/Photo4.svg" alt="">
                             <div class="container-teams-name">
                                 <div class="container-teams-names">
                                     <p class="teams-text title-name">Оксана Кобзар</p>
                                     <p class="teams-text-boss text-boss">Equity partner, Attorney-at-law</p>
                                 </div>
-                                <div class="container__link">
+                                <div class="container__link-teams">
                                     <a class="link-arrow" href="#">
                                         <img class="img-teams-link" src="images/teams/Vector2.svg" alt="">     
                                     </a>
@@ -205,7 +240,7 @@
                                     <p class="teams-text title-name">Юлія Гудименко</p>
                                     <p class="teams-text-boss text-boss">Associate, Attorney-at-law</p>
                                 </div>
-                                <div class="container__link">
+                                <div class="container__link-teams">
                                     <a class="link-arrow" href="#">
                                         <img class="img-teams-link" src="images/teams/Vector2.svg" alt="">      
                                     </a>

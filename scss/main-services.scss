@@ -58,13 +58,12 @@
     width: 31%;
     margin-bottom: 58px;
 }
+.main-services-menu__item.marg {
+    margin-bottom: 0px;
+}
 
 .main-services-menu__item:nth-child(3n+3) {
     margin-right: 0px;
-}
-
-.main-services-menu__item:nth-child(4n+1) {
-    margin-bottom: 0px;
 }
 
 @media (max-width:900px) {
