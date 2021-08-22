@@ -689,7 +689,7 @@
     }
 
     .popup-burger {
-        background-color: rgba(50, 50, 100, 1);
+        background-color: rgb(17, 17, 129, 0.7);
         top: 0;
         left: 0;
         width: 100%;
@@ -698,6 +698,7 @@
         display: flex;
         align-items: flex-end;
         display: none;
+        z-index: 2;
     }
 
     .popup-burger.open {
@@ -775,9 +776,6 @@
         right: 19px;
     }
 
-
-
-
     .contsiner-icon-help {
         padding-top: 15px;
     }
@@ -815,9 +813,9 @@
         text-align: start;
         margin-bottom: 12px;
 
-            &:last-child {
-                margin-bottom: 0px;
-            }
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 
     .container-icon {
@@ -896,6 +894,10 @@
     }
 
     .contsiner-icon-help.position {
+        width: 100%;
+    }
+
+    .contsiner-icon-help {
         width: 100%;
     }
 }
