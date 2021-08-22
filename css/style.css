@@ -2288,6 +2288,40 @@ body {
     width: 100%;
   }
 
+  .popup {
+    background-color: rgba(50, 50, 100, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    display: none;
+    z-index: 2;
+  }
+
+  .popup {
+    width: 100%;
+  }
+
+  .contsiner-icon-help {
+    padding-top: 15px;
+  }
+
+  .input-tel {
+    margin-bottom: 8px;
+  }
+
+  .icon-help__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .close {
+    top: 19px;
+    right: 19px;
+  }
+
   .contsiner-icon-help {
     padding-top: 15px;
   }
@@ -2400,8 +2434,13 @@ body {
   .list-services:last-child {
     margin-bottom: 0px;
   }
-  .list-services .main-services {
+
+  .main-services {
     margin-bottom: 10px;
+  }
+
+  .contsiner-icon-help.position {
+    width: 100%;
   }
 }
 
