@@ -439,13 +439,10 @@ body {
 .main-exper {
   display: flex;
   padding-bottom: 80px;
+  position: relative;
 }
 
 .main-container {
-  box-shadow: 0px 30px 0px -20px #cacadb, 0px 50px 0px -30px #e7e7f2;
-  border-radius: 0px 0px 12px 12px;
-  position: relative;
-  z-index: 1;
   padding-top: 70px;
 }
 
@@ -487,10 +484,6 @@ body {
   color: #FFFFFF;
 }
 
-.main-exper-container {
-  margin-right: 40px;
-}
-
 .exper-container__list {
   margin-right: 40px;
   display: flex;
@@ -500,6 +493,7 @@ body {
 
 .exper-container__title {
   padding-bottom: 21px;
+  padding-right: 40px;
 }
 
 .exper-container__title.item-last {
@@ -1231,6 +1225,7 @@ body {
   padding: 20px;
   background-color: #F5F5FA;
   width: 40%;
+  border-radius: 12px;
 }
 
 .container.container-map {
@@ -1263,6 +1258,7 @@ body {
 .link-email.link-map {
   display: block;
   text-decoration: none;
+  color: #24A3FF;
 }
 
 .fb-map {
@@ -1274,6 +1270,7 @@ body {
   color: #24A3FF;
   font-weight: 700;
   display: block;
+  width: 123px;
 }
 
 .link-f-map {
@@ -1354,22 +1351,24 @@ body {
   }
 }
 .gradient {
-  background: linear-gradientlinear-gradient(180deg, rgba(50, 50, 100, 0.1) 0%, #323264 100%);
-  background-position: center;
-  background-repeat: no-repeat;
+  box-shadow: 0px 45px 0px -25px #e7e7f2;
+  border-radius: 0px 0px 35px 35px;
+  position: relative;
+  z-index: 1;
 }
 
 .gradient-down {
-  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  background-position: center;
-  background-repeat: no-repeat;
+  box-shadow: 0px 30px 0px -20px #cacadb;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  z-index: 1;
 }
 
 .gradient-icon {
-  background-image: url(../images/service_page/Cover.svg);
-  background-position: top;
+  background-image: linear-gradient(180deg, rgba(50, 50, 100, 0.1) 0%, #323264 100%), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%), url(../images/service_page/foto-cover.svg);
   background-repeat: no-repeat;
-  background-size: auto 500px;
+  background-position: 0 0, 0 500px, 0 0;
+  background-size: 100% 500px, 100% 100%, cover;
 }
 
 .header.header-services {
@@ -1388,13 +1387,6 @@ body {
 }
 .nav__link.link-chois:hover {
   border-bottom: 2px solid #0085FF;
-}
-
-.container.container-servi {
-  box-shadow: 0px 30px 0px -20px #cacadb, 0px 50px 0px -30px #e7e7f2;
-  border-radius: 0px 0px 12px 12px;
-  position: relative;
-  z-index: 1;
 }
 
 .container-icon {
@@ -1525,8 +1517,10 @@ body {
 }
 
 .contsiner-icon-help.position {
+  width: 527px;
   margin: auto;
   position: relative;
+  border-radius: 12px;
 }
 
 .input {
@@ -2442,10 +2436,12 @@ body {
 
   .contsiner-icon-help.position {
     width: 100%;
+    border-radius: 0px;
   }
 
   .contsiner-icon-help {
     width: 100%;
+    border-radius: 0px;
   }
 }
 

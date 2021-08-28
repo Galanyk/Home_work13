@@ -15,6 +15,7 @@
     padding: 20px;
     background-color: $bg_color;
     width: 40%;
+    border-radius: 12px;
 }
 
 .container.container-map {
@@ -29,7 +30,6 @@
     flex-direction: column;
     width: 40%;
     padding-top: 138px;
-    // align-items: flex-start;
 }
 
 .link-tel.tel-map {
@@ -51,6 +51,7 @@
     @extend %link-map;
     display: block;
     text-decoration: none;
+    color: $regular_color;
 }
 
 .fb-map {
@@ -62,6 +63,7 @@
     color: $regular_color;
     font-weight: 700;
     display: block;
+    width: 123px;
 }
 
 .link-f-map {
